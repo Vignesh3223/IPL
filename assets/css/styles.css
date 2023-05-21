@@ -1,8 +1,10 @@
+/*new font*/
 @font-face {
     font-family: puvi;
     src: url(/assets/fonts/OpenType-TT/Zoho\ Puvi\ Regular.ttf);
 }
 
+/*navigation bar*/
 #navbarNav {
     justify-content: center;
     padding: 10px;
@@ -25,6 +27,7 @@
     width: 100px;
 }
 
+/*layer 1*/
 #two {
     width: 100%;
     background-size: cover;
@@ -56,6 +59,7 @@
     color: cornsilk;
 }
 
+/*layer 2*/
 .page3 h1 {
     font-family: Algerian;
     text-align: center;
@@ -79,6 +83,7 @@
     height: 600px;
 }
 
+/*layer 3*/
 .page4 h1 {
     font-family: Algerian;
     text-align: center;
@@ -137,7 +142,7 @@
     transform: rotateY(180deg);
 }
 
-
+/*layer 4*/
 .page5 img {
     height: 700px;
     width: 80%;
@@ -155,6 +160,7 @@
     font-weight: 600;
 }
 
+/*layer 5*/
 .page6 h1 {
     font-family: Algerian;
     text-align: center;
@@ -189,6 +195,7 @@
     padding: 10px;
 }
 
+/*layer 5 table 1*/
 .page6 .table1 {
     text-align: center;
     font-family: puvi;
@@ -199,6 +206,7 @@
     background: linear-gradient(to right, #8f94fb, #4e54c8);
 }
 
+/*layer 5 table 2*/
 .page6 .table2 {
     text-align: center;
     font-family: puvi;
@@ -209,7 +217,19 @@
     background: linear-gradient(to right, #0083B0, #00B4DB);
 }
 
+/*layer 5 table 3*/
 .page6 .table3 {
+    text-align: center;
+    font-family: puvi;
+    font-size: medium;
+    font-weight: 600;
+    background: #EF3B36;
+    background: -webkit-linear-gradient(to right, #fe5b5b, #EF3B36);
+    background: linear-gradient(to right, #fe5b5b, #EF3B36);
+}
+
+/*layer 5 table 4*/
+.page6 .table4 {
     text-align: center;
     font-family: puvi;
     font-size: medium;
@@ -219,16 +239,7 @@
     background: linear-gradient(to right, #F37335, #FDC830);
 }
 
-.page6 .table4 {
-    text-align: center;
-    font-family: puvi;
-    font-size: medium;
-    font-weight: 600;
-    background: #EF3B36;
-    background: -webkit-linear-gradient(to right, #FFFFFF, #EF3B36);
-    background: linear-gradient(to right, #FFFFFF, #EF3B36);
-}
-
+/*layer 5 table 5*/
 .page6 .table5 {
     text-align: center;
     font-family: puvi;
@@ -237,4 +248,84 @@
     background: #20002c;
     background: -webkit-linear-gradient(to right, #cbb4d4, #b408f3);
     background: linear-gradient(to right, #cbb4d4, #b408f3);
+}
+
+/*layer 6*/
+.page7 h1 {
+    font-family: Algerian;
+    text-align: center;
+    color: rgb(250, 87, 5);
+    font-weight: bolder;
+    letter-spacing: 3px;
+    background: #2980b9;
+    background: -webkit-linear-gradient(to right, #2c3e50, #2980b9);
+    background: linear-gradient(to right, #2c3e50, #2980b9);
+}
+
+.p1 {
+    display: flex;
+    background: #007991;
+    background: -webkit-linear-gradient(to right, #78ffd6, #007991);
+    background: linear-gradient(to right, #78ffd6, #007991);
+}
+
+.page7 img {
+    width: 50%;
+    height: 450px;
+}
+
+.p1 form {
+    width: 50%;
+    padding: 30px;
+    font-family: puvi;
+    font-size: large;
+    font-weight: 400;
+}
+
+/*layer 7*/
+.page8{
+    background: #2193b0;  
+background: -webkit-linear-gradient(to right, #6dd5ed, #2193b0);  
+background: linear-gradient(to right, #6dd5ed, #2193b0); 
+
+}
+.page8 img{
+    width:300px;
+    height: 400px;
+}
+.page8 h1{
+    font-family: Algerian;
+    color: rgb(4, 1, 0);
+    font-weight: bolder;
+    letter-spacing: 3px;
+}
+
+.page8 .contact{
+    font-family: puvi;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #ee0c0f;
+}
+
+.trophy img{
+    width:450px;
+    height:350px;
+}
+
+/*footer*/
+.footer {
+    text-align: center;
+    letter-spacing: 3px;
+    font-family: puvi;
+    font-weight: bold;
+    text-transform: uppercase;
+    background: #77A1D3;
+    background: -webkit-linear-gradient(to right, #E684AE, #79CBCA, #77A1D3);
+    background: linear-gradient(to right, #E684AE, #79CBCA, #77A1D3);
+}
+
+.footer a {
+    text-decoration: none;
+    color: red;
+    letter-spacing: normal;
 }
