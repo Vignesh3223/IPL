@@ -5,15 +5,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--external CSS-->
     <link rel="stylesheet" href="assets/css/styles.css">
+    <!--Bootstrap-->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!--Favicon-->
     <link rel="icon" href="assets/images/logo.png" type="image/png">
+    <!--Font-awesome-->
     <script src="https://kit.fontawesome.com/d7200c44d8.js" crossorigin="anonymous"></script>
+    <!--jquery validation-->
     <script src="https://cdn.jsdelivr.net/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
     <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
+    <!--external JS-->
     <script src="assets/js/form-validation.js"></script>
+    <!--Sweetalert-->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.16/dist/sweetalert2.all.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
     <title>IPL</title>
 </head>
 
@@ -415,7 +426,8 @@
                         <h4><i class="fa-solid fa-trophy" style="color: #f7d702;"></i>
                             IPL Winners and Runners
                             <i class="fa-solid fa-trophy" style="color: #bab5b9;"></i>
-                            <button type="button" class="btn btn-danger btn1 me-5">Add Winner & Runner
+                            <button type="button" class="btn btn-danger btn1 me-5" onclick="CreateWinnerBox()">Add
+                                Winner & Runner
                                 <i class="fa-solid fa-people-group fa-xl" style="color: #ffffff;"></i>
                             </button>
                         </h4>
@@ -448,9 +460,10 @@
                     <!--table 2-->
                     <div class="carousel-item">
                         <h4><i class="fa-solid fa-trophy" style="color: #f7d702;"></i>
-                            IPL Winners List with Captain, Man of the Match, and Player of the Series
+                            IPL Winners List with Captain, Man of the Match and Player of the Series
                             <i class="fa-solid fa-trophy" style="color: #f7d702;"></i>
-                            <button type="button" class="btn btn-danger btn2 me-5">Add Players
+                            <button type="button" class="btn btn-danger btn2 me-5" onclick="CreatePlayersBox()">Add
+                                Players
                                 <i class="fa-solid fa-user-group fa-lg" style="color: #efeff1;"></i></i>
                             </button>
                         </h4>
@@ -484,7 +497,8 @@
                         <h4><i class="fa-solid fa-trophy" style="color: #f7d702;"></i>
                             Most Wins in IPL
                             <i class="fa-solid fa-trophy" style="color: #f7d702;"></i>
-                            <button type="button" class="btn btn-danger btn3 me-5">Add Winner Team
+                            <button type="button" class="btn btn-danger btn3 me-5" onclick="CreateTeamBox()">Add Winner
+                                Team
                                 <i class="fa-solid fa-people-group fa-xl" style="color: #f7f7f8;"></i>
                             </button>
                         </h4>
@@ -516,7 +530,8 @@
                         <h4><i class="fa-solid fa-trophy" style="color: #fb0404;"></i>
                             IPL Orange Cap Winners
                             <i class="fa-solid fa-trophy" style="color: #fb0404;"></i>
-                            <button type="button" class="btn btn-danger btn4 me-5">Add Highest Scorer
+                            <button type="button" class="btn btn-danger btn4 me-5" onclick="CreateBatsmanBox()">Add
+                                Highest Scorer
                                 <i class="fa-solid fa-user-plus fa-lg" style="color: #f2f4f8;"></i>
                             </button>
                         </h4>
@@ -556,7 +571,8 @@
                         <h4><i class="fa-solid fa-trophy" style="color: #640377;"></i>
                             IPL Purple Cap Winners
                             <i class="fa-solid fa-trophy" style="color: #640377;"></i>
-                            <button type="button" class="btn btn-danger btn5 me-5">Add Highest Wicket-taker
+                            <button type="button" class="btn btn-danger btn5 me-5" onclick="CreateBowlerBox()">Add
+                                Highest Wicket-taker
                                 <i class="fa-solid fa-user-plus fa-lg" style="color: #f2f4f8;"></i>
                             </button>
                         </h4>

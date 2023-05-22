@@ -66,6 +66,34 @@ function loadTable() {
 }
 loadTable();
 
+function CreateWinnerBox() {
+    Swal.fire({
+        title: "ADD WINNER & RUNNER",
+        html:
+            '<input id="Year" class="swal2-input" placeholder="Year" required>' +
+            '<input id="Winner" class="swal2-input" placeholder="Winner (Team Name)" required>' +
+            '<input id="Won by" class="swal2-input" placeholder="Won by" required>' +
+            '<input id="Runner Up" class="swal2-input" placeholder="Runner Up (Team Name)" required>' +
+            '<input id="Venue" class="swal2-input" placeholder="Venue" required>',
+        focusConfirm: false,
+        showCancelButton: true,
+        cancelButtonColor: '#d33',
+        preConfirm: () => {
+            const Year = document.getElementById("Year").value;
+            const Winner = document.getElementById("Winner").value;
+            const Wonby = document.getElementById("Won by").value;
+            const Runner = document.getElementById("Runner Up").value;
+            const Venue = document.getElementById("Venue").value;
+            if (!Year || !Winner || !Wonby || !Runner || !Venue) {
+                Swal.showValidationMessage("Please fill in all the fields");
+            } else {
+                addWinner();
+            }
+        }
+    });
+}
+
+
 /*winners and captains table display*/
 function loadTable2() {
     const xhttp = new XMLHttpRequest
@@ -91,6 +119,33 @@ function loadTable2() {
 }
 loadTable2();
 
+function CreatePlayersBox() {
+    Swal.fire({
+        title: "ADD CAPTAIN, MAN OF THE MATCH & PLAYER OF THE SERIES",
+        html:
+            '<input id="Year" class="swal2-input" placeholder="Year" required>' +
+            '<input id="Winner" class="swal2-input" placeholder="Winner" required>' +
+            '<input id="Captain" class="swal2-input" placeholder="Captain" required>' +
+            '<input id="Man of the Match" class="swal2-input" placeholder="Man of the Match" required>' +
+            '<input id="Player of the Series" class="swal2-input" placeholder="Player of the Series" required>',
+        focusConfirm: false,
+        showCancelButton: true,
+        cancelButtonColor: '#d33',
+        preConfirm: () => {
+            const Year = document.getElementById("Year").value;
+            const Winner = document.getElementById("Winner").value;
+            const Captain = document.getElementById("Captain").value;
+            const Man = document.getElementById("Man of the Match").value;
+            const Player = document.getElementById("Player of the Series").value;
+            if (!Year || !Winner || !Captain || !Man || !Player) {
+                Swal.showValidationMessage("Please fill in all the fields");
+            } else {
+                addPlayers();
+            }
+        }
+    });
+}
+
 /*most wins table display*/
 function loadTable3() {
     const xhttp = new XMLHttpRequest
@@ -113,6 +168,30 @@ function loadTable3() {
     }
 }
 loadTable3();
+
+
+function CreateTeamBox() {
+    Swal.fire({
+        title: "ADD WINNING TEAM STATS",
+        html:
+            '<input id="Team" class="swal2-input" placeholder="Team Name" required>' +
+            '<input id="Trophy" class="swal2-input" placeholder="Trophy Count" required>' +
+            '<input id="Year" class="swal2-input" placeholder="Year" required>',
+        focusConfirm: false,
+        showCancelButton: true,
+        cancelButtonColor: '#d33',
+        preConfirm: () => {
+            const Team = document.getElementById("Team").value;
+            const Trophy = document.getElementById("Trophy").value;
+            const Year = document.getElementById("Year").value;
+            if (!Team || !Trophy || !Year) {
+                Swal.showValidationMessage("Please fill in all the fields");
+            } else {
+                addTeamstats();
+            }
+        }
+    });
+}
 
 /*orange cap winners display*/
 function loadTable4() {
@@ -145,6 +224,44 @@ function loadTable4() {
 }
 loadTable4();
 
+function CreateBatsmanBox() {
+    Swal.fire({
+        title: "ADD ORANGE CAP WINNER",
+        html:
+            '<input id="Year" class="swal2-input" placeholder="Year" required>' +
+            '<input id="Winner" class="swal2-input" placeholder="Winner (Player Name)" required>' +
+            '<input id="Innings" class="swal2-input" placeholder="Matches Played" required>' +
+            '<input id="Runs" class="swal2-input" placeholder="Total Runs Scored" required>' +
+            '<input id="Highest Score" class="swal2-input" placeholder="Highest Score" required>' +
+            '<input id="Average" class="swal2-input" placeholder="Average" required>' +
+            '<input id="Strike Rate" class="swal2-input" placeholder="Strike Rate" required>' +
+            '<input id="50s" class="swal2-input" placeholder="Total number of 50s" required>' +
+            '<input id="100s" class="swal2-input" placeholder="Total number of 100s" required>' +
+            '<input id="4s" class="swal2-input" placeholder="Total number of Fours" required>' +
+            '<input id="6s" class="swal2-input" placeholder="Total number of Sixes" required>',
+        focusConfirm: false,
+        showCancelButton: true,
+        cancelButtonColor: '#d33',
+        preConfirm: () => {
+            const Year = document.getElementById("Year").value;
+            const Winner = document.getElementById("Winner").value;
+            const Innings = document.getElementById("Innings").value;
+            const Runs = document.getElementById("Runs").value;
+            const Highest = document.getElementById("Highest Score").value;
+            const Average = document.getElementById("Average").value;
+            const SR = document.getElementById("Strike Rate").value;
+            const fifties = document.getElementById("50s").value;
+            const hundreds = document.getElementById("100s").value;
+            const fours = document.getElementById("4s").value;
+            const sixes = document.getElementById("6s").value;
+            if (!Year || !Winner || !Innings || !Runs || !Highest || !Average || !SR || !fifties || !hundreds || !fours || !sixes) {
+                Swal.showValidationMessage("Please fill in all the fields");
+            } else {
+                addBatsman();
+            }
+        }
+    });
+}
 /*orange cap winners display*/
 function loadTable5() {
     const xhttp = new XMLHttpRequest
@@ -169,3 +286,30 @@ function loadTable5() {
     }
 }
 loadTable5();
+
+function CreateBowlerBox() {
+    Swal.fire({
+        title: "ADD PURPLE CAP WINNER",
+        html:
+            '<input id="Year" class="swal2-input" placeholder="Year" required>' +
+            '<input id="Winner" class="swal2-input" placeholder="Winner (Player Name)" required>' +
+            '<input id="Team" class="swal2-input" placeholder="Team" required>' +
+            '<input id="Matches" class="swal2-input" placeholder="Matches Played" required>' +
+            '<input id="Wickets" class="swal2-input" placeholder="Wickets" required>',
+        focusConfirm: false,
+        showCancelButton: true,
+        cancelButtonColor: '#d33',
+        preConfirm: () => {
+            const Year = document.getElementById("Year").value;
+            const Winner = document.getElementById("Winner").value;
+            const Team = document.getElementById("Team").value;
+            const Matches = document.getElementById("Matches").value;
+            const Wickets = document.getElementById("Wickets").value;
+            if (!Year || !Winner || !Team || !Matches || !Wickets) {
+                Swal.showValidationMessage("Please fill in all the fields");
+            } else {
+                addPlayers();
+            }
+        }
+    });
+}
