@@ -348,4 +348,12 @@ form .error {
     .page2 img {
         display: none;
     }
+
+    .page7 img {
+        display: none;
+    }
+
+    .page7 form {
+        width: 100%;
+    }
 }
