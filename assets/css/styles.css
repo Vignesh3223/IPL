@@ -282,7 +282,7 @@
     font-weight: 400;
 }
 
-form .error{
+form .error {
     color: red;
 }
 
@@ -342,4 +342,10 @@ form .error{
     text-decoration: none;
     color: red;
     letter-spacing: normal;
+}
+
+@media (max-width:426px) {
+    .page2 img {
+        display: none;
+    }
 }
