@@ -15,9 +15,9 @@
 </head>
 
 <body>
-    <!--navbar-->
-    <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="container-fluid">
+    <div class="container-fluid">
+        <!--navbar-->
+        <nav class="navbar navbar-expand-lg navbar-light">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -37,21 +37,21 @@
                         <a class="nav-link" href="#winners">CHAMPIONS</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#cmt">FEEDBACK</a>
+                        <a class="nav-link" href="#contact">CONTACT</a>
                     </li>
                 </ul>
             </div>
+        </nav>
+        <!--layer 1-->
+        <div class="container page1">
+            <img id="two" src="assets/images/back2.webp" alt="face">
         </div>
-    </nav>
-      <!--layer 1-->
-    <div class="container page1">
-        <img id="two" src="assets/images/back2.webp" alt="face">
     </div>
     <div class="container-fluid page2 mt-5">
         <img class="mt-5 pt-5" src="assets/images/teams.jpg" alt="teams">
         <div class="part2">
             <h1>Indian Premier League</h1>
-            <p class="pt-5">The Indian Premier League (IPL) is a domestic, annual Twenty20 cricket tournament in India,
+            <p class="pt-2">The Indian Premier League (IPL) is a domestic, annual Twenty20 cricket tournament in India,
                 organized by the IPL Governing Council, under the aegis of the Board of Control for Cricket in India
                 (BCCI). It is the most watched Twenty20 tournament and the second-best paying[a] sporting league
                 globally.
@@ -71,12 +71,12 @@
                 League champion.</p>
         </div>
     </div>
-      <!--layer 2 carousel-->
+    <!--layer 2 carousel-->
     <div class="container-fluid page3 pt-4 pb-5">
         <h1>TITLE SPONSORS AND FEES FROM 2008 - 2023</h1>
         <div id="carouselExampleInterval" class="carousel slide pt-4" data-bs-ride="carousel">
             <div class="carousel-inner">
-                <div class="carousel-item active" data-bs-interval="5000">
+                <div class="carousel-item active" data-bs-interval="2000">
                     <img src="assets/images/IPL-title-sponsors.jpg" class="d-block w-100" alt="sponsors">
                 </div>
                 <div class="carousel-item" data-bs-interval="2000">
@@ -98,7 +98,7 @@
             </button>
         </div>
     </div>
-      <!--layer 3 cards-->
+    <!--layer 3 cards-->
     <div class="container-fluid page4 pt-3 mb-5 pb-5" id="teams">
         <h1>IPL TEAMS</h1>
         <div class="container part3 pt-4 mb-5 pb-5">
@@ -210,8 +210,8 @@
             </div>
         </div>
     </div>
-      <!--layer 4-->
-      <!--cards-->
+    <!--layer 4-->
+    <!--cards-->
     <div class=" container-fluid page5 mt-5 pt-5 pb-5">
         <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
@@ -390,7 +390,7 @@
             </div>
         </div>
     </div>
-      <!--layer 5-->
+    <!--layer 5-->
     <div class="container-fluid page6 mt-1" id="winners">
         <h1>CHAMPIONS RECORDS</h1>
         <div class="container mt-4 pb-3">
@@ -410,7 +410,7 @@
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <h4>IPL Winners and Runners</h4>
-                         <!--table 1-->
+                        <!--table 1-->
                         <table class="table table-striped table-hover table1">
                             <thead>
                                 <tr>
@@ -652,7 +652,7 @@
                             </tbody>
                         </table>
                     </div>
-                     <!--table 3-->
+                    <!--table 3-->
                     <div class="carousel-item">
                         <h4>Most Wins in IPL</h4>
                         <table class="table table-striped table-hover table3">
@@ -702,7 +702,7 @@
                             </tbody>
                         </table>
                     </div>
-                     <!--table 4-->
+                    <!--table 4-->
                     <div class="carousel-item">
                         <h4>IPL Orange Cap Winners</h4>
                         <table class="table table-striped table-hover table4">
@@ -920,7 +920,7 @@
                             </tbody>
                         </table>
                     </div>
-                     <!--table 5-->
+                    <!--table 5-->
                     <div class="carousel-item">
                         <h4>IPL Purple Cap Winners</h4>
                         <table class="table table-striped table-hover table5">
@@ -1046,12 +1046,12 @@
             </div>
         </div>
     </div>
-      <!--layer 6-->
+    <!--layer 6-->
     <div class="container-fluid page7" id="cmt">
         <h1>FEEDBACK</h1>
         <div class="p1">
             <img class="pt-2 pb-2 ms-5" src="assets/images/comments.jpg" alt="comment">
-            <form id="comment">
+            <form class="pe-3" id="comment">
                 <div class="form-group mb-2">
                     <label for="name">
                         <span class="badge bg-info">
@@ -1072,19 +1072,19 @@
                         <span class="badge bg-dark"> <i class="fas fa-comments"></i>
                             Comments</span>
                     </label>
-                    <textarea rows="7" id="comments" class="form-control" placeholder="Enter your comments"></textarea>
+                    <textarea rows="5" id="comments" class="form-control" placeholder="Enter your comments"></textarea>
                 </div>
                 <button type="submit" class="btn btn-primary mt-3" onclick="comment()">Submit</button>
             </form>
         </div>
     </div>
-      <!--layer 7-->
+    <!--layer 7-->
     <div class="container-fluid page8 mt-2 pb-3">
         <div class="row">
             <div class="col-4">
                 <img src="assets/images/ipl header.png" alt="logo">
             </div>
-            <div class="col-4 pt-3 contact">
+            <div class="col-4 pt-3 contact" id="contact">
                 <h1>Contact us</h1>
                 <address style="white-space: pre-line;">
                     <i class="fa-sharp fa-solid fa-location-dot"></i> BCCI-IPL 4th Floor, Cricket Centre,
@@ -1096,14 +1096,27 @@
                 <p><i class="fa-solid fa-phone"></i>+91 22 61580300</p>
                 <p><i class="fa-solid fa-phone"></i>+91 22 22800354</p>
             </div>
-            <div class="col-4 pt-3 pe-3 trophy">
-                <img src="assets/images/trophy.avif" alt="trophy">
+            <div class="col-4 pt-3 pe-3 teams">
+              <h1>TEAMS</h1>
+              <ul>
+                <li><a href="#teams">Mumbai Indians</a></li>
+                <li><a href="#teams">Chennai Super Kings</a></li>
+                <li><a href="#teams">Delhi Capitals</a></li>
+                <li><a href="#teams">Gujarat Titans</a></li>
+                <li><a href="#teams">Royal Challengers Bangalore</a></li>
+                <li><a href="#teams">Sunrisers Hyderabad</a></li>
+                <li><a href="#teams">Punjab Kings</a></li>
+                <li><a href="#teams">Lucknow Super Giants</a></li>
+                <li><a href="#teams">Kolkata Knight Riders</a></li>
+                <li><a href="#teams">Rajasthan Royals</a></li>
+              </ul>
             </div>
         </div>
     </div>
     <!--footer-->
     <div class="container-fluid footer pt-3 pb-3">
-        <p class="pt-3">for more details,<a href="https://www.iplt20.com/" target="_blank"> Click here!</a></p>
+        <p class="pt-3">for more details,visit us at<a href="https://www.iplt20.com/" target="_blank"> iplt20.com</a>
+        </p>
     </div>
 </body>
 

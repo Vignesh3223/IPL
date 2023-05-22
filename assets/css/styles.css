@@ -275,7 +275,7 @@
 }
 
 .p1 form {
-    width: 50%;
+    width: 40%;
     padding: 30px;
     font-family: puvi;
     font-size: large;
@@ -283,33 +283,42 @@
 }
 
 /*layer 7*/
-.page8{
-    background: #2193b0;  
-background: -webkit-linear-gradient(to right, #6dd5ed, #2193b0);  
-background: linear-gradient(to right, #6dd5ed, #2193b0); 
+.page8 {
+    background: #2193b0;
+    background: -webkit-linear-gradient(to right, #6dd5ed, #2193b0);
+    background: linear-gradient(to right, #6dd5ed, #2193b0);
 
 }
-.page8 img{
-    width:300px;
+
+.page8 img {
+    width: 300px;
     height: 400px;
 }
-.page8 h1{
+
+.page8 h1 {
     font-family: Algerian;
     color: rgb(4, 1, 0);
     font-weight: bolder;
     letter-spacing: 3px;
 }
 
-.page8 .contact{
+.page8 .contact {
     font-family: puvi;
     font-weight: 400;
     letter-spacing: 1px;
     color: #ee0c0f;
 }
 
-.trophy img{
-    width:450px;
-    height:350px;
+.teams li {
+    list-style-type: none;
+}
+
+.teams a {
+    text-decoration: none;
+    font-family: puvi;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #fff;
 }
 
 /*footer*/
@@ -325,6 +334,7 @@ background: linear-gradient(to right, #6dd5ed, #2193b0);
 }
 
 .footer a {
+    text-transform: lowercase;
     text-decoration: none;
     color: red;
     letter-spacing: normal;
