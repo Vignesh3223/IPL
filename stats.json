@@ -1,105 +1,105 @@
 {
     "Winners": [
         {
-            "Year": "2008",
+            "Year": 2008,
             "Winner": "Rajasthan Royals",
             "Won by": "3 Wickets",
             "Runner Up": "Chennai Super Kings",
             "Venue": "Mumbai"
         },
         {
-            "Year": "2009",
+            "Year": 2009,
             "Winner": "Deccan Chargers",
             "Won by": "6 runs",
             "Runner Up": "Royal Challengers Bangalore",
             "Venue": "Johannesburg"
         },
         {
-            "Year": "2010",
+            "Year": 2010,
             "Winner": "Chennai Super Kings",
             "Won by": "22 runs",
             "Runner Up": "Mumbai Indians",
             "Venue": "Mumbai"
         },
         {
-            "Year": "2011",
+            "Year": 2011,
             "Winner": "Chennai Super Kings",
             "Won by": "58 runs",
             "Runner Up": "Royal Challengers Bangalore",
             "Venue": "Chennai"
         },
         {
-            "Year": "2012",
+            "Year": 2012,
             "Winner": "Kolkata Knight Riders",
             "Won by": "5 Wickets",
             "Runner Up": "Chennai Super Kings",
             "Venue": "Chennai"
         },
         {
-            "Year": "2013",
+            "Year": 2013,
             "Winner": "Mumbai Indians",
             "Won by": "23 runs",
             "Runner Up": "Chennai Super Kings",
             "Venue": "Kolkata"
         },
         {
-            "Year": "2014",
+            "Year": 2014,
             "Winner": "Kolkata Knight Riders",
             "Won by": "3 Wickets",
             "Runner Up": "Kings XI Punjab",
             "Venue": "Bangalore"
         },
         {
-            "Year": "2015",
+            "Year": 2015,
             "Winner": "Mumbai Indians",
             "Won by": "41 runs",
             "Runner Up": "Chennai Super Kings",
             "Venue": "Kolkata"
         },
         {
-            "Year": "2016",
+            "Year": 2016,
             "Winner": "Sunrisers Hyderabad",
             "Won by": "8 runs",
             "Runner Up": "Royal Challengers Bangalore",
             "Venue": "Bangalore"
         },
         {
-            "Year": "2017",
+            "Year": 2017,
             "Winner": "Mumbai Indians",
             "Won by": "1 run",
             "Runner Up": "Rising Pune Supergiants",
             "Venue": "Hyderabad"
         },
         {
-            "Year": "2018",
+            "Year": 2018,
             "Winner": "Chennai Super Kings",
             "Won by": "8 Wickets",
             "Runner Up": "Sunrisers Hyderabad",
             "Venue": "Mumbai"
         },
         {
-            "Year": "2019",
+            "Year": 2019,
             "Winner": "Mumbai Indians",
             "Won by": "1 run",
             "Runner Up": "Chennai Super Kings",
             "Venue": "Hyderabad"
         },
         {
-            "Year": "2020",
+            "Year": 2020,
             "Winner": "Mumbai Indians",
             "Won by": "5 Wickets",
             "Runner Up": "Delhi Capitals",
             "Venue": "Dubai"
         },
         {
-            "Year": "2021",
+            "Year": 2021,
             "Winner": "Chennai Super Kings",
             "Won by": "27 runs",
             "Runner Up": "Kolkata Knight Riders",
             "Venue": "Dubai"
         },
         {
-            "Year": "2022",
+            "Year": 2022,
             "Winner": "Gujarat Titans",
             "Won by": "7 wickets",
             "Runner Up": "Rajasthan Royals",
@@ -108,105 +108,105 @@
     ],
     "Captains": [
         {
-            "Year": "2008",
+            "Year": 2008,
             "Winner": "Rajasthan Royals",
             "Captain": "Shane Warne",
             "Man of the Match": "Yusuf Pathan",
             "Player of the Series": "Shane watson"
         },
         {
-            "Year": "2009",
+            "Year": 2009,
             "Winner": "Deccan Chargers",
             "Captain": "Adam Gilchrist",
             "Man of the Match": "Anil Kumble",
             "Player of the Series": "Adam Gilchrist"
         },
         {
-            "Year": "2010",
+            "Year": 2010,
             "Winner": "Chennai Super Kings",
             "Captain": "MS Dhoni",
             "Man of the Match": "Suresh Raina",
             "Player of the Series": "Sachin Tendulkar"
         },
         {
-            "Year": "2011",
+            "Year": 2011,
             "Winner": "Chennai Super Kings",
             "Captain": "MS Dhoni",
             "Man of the Match": "Murali Vijay",
             "Player of the Series": "Chris Gayle"
         },
         {
-            "Year": "2012",
+            "Year": 2012,
             "Winner": "Kolkata Knight Riders",
             "Captain": "Gautam Gambhir",
             "Man of the Match": "Manvinder Bisla",
             "Player of the Series": "Sunil Narine"
         },
         {
-            "Year": "2013",
+            "Year": 2013,
             "Winner": "Mumbai Indians",
             "Captain": "Rohit Sharma",
             "Man of the Match": "Kieron Pollard",
             "Player of the Series": "Shane Watson"
         },
         {
-            "Year": "2014",
+            "Year": 2014,
             "Winner": "Kolkata Knight Riders",
             "Captain": "Gautam Gambhir",
             "Man of the Match": "Manish Pandey",
             "Player of the Series": "Glenn Maxwell"
         },
         {
-            "Year": "2015",
+            "Year": 2015,
             "Winner": "Mumbai Indians",
             "Captain": "Rohit Sharma",
             "Man of the Match": "Rohit Sharma",
             "Player of the Series": "Andre Russell"
         },
         {
-            "Year": "2016",
+            "Year": 2016,
             "Winner": "Sunrisers Hyderabad",
             "Captain": "David Warner",
             "Man of the Match": "Ben Cutting",
             "Player of the Series": "Virat kohli"
         },
         {
-            "Year": "2017",
+            "Year": 2017,
             "Winner": "Mumbai Indians",
             "Captain": "Rohit Sharma",
             "Man of the Match": "Krunal Pandya",
             "Player of the Series": "Ben Stokes"
         },
         {
-            "Year": "2018",
+            "Year": 2018,
             "Winner": "Chennai Super Kings",
             "Captain": "MS Dhoni",
             "Man of the Match": "Shane Watson",
             "Player of the Series": "Sunil Narine"
         },
         {
-            "Year": "2019",
+            "Year": 2019,
             "Winner": "Mumbai Indians",
             "Captain": "Rohit Sharma",
             "Man of the Match": "Jasprit Bumrah",
             "Player of the Series": "Andre Russell"
         },
         {
-            "Year": "2020",
+            "Year": 2020,
             "Winner": "Mumbai Indians",
             "Captain": "Rohit Sharma",
             "Man of the Match": "Trent Boult",
             "Player of the Series": "Jofra Archer"
         },
         {
-            "Year": "2021",
+            "Year": 2021,
             "Winner": "Chennai Super Kings",
             "Captain": "MS Dhoni",
             "Man of the Match": "Faf du plessis",
             "Player of the Series": "Harshal Patel"
         },
         {
-            "Year": "2022",
+            "Year": 2022,
             "Winner": "Gujarat Titans",
             "Captain": "Hardik Pandya",
             "Man of the Match": "Hardik Pandya",
@@ -445,6 +445,113 @@
             "100s": 4,
             "4s": 83,
             "6s": 45
+        }
+    ],
+    "Purple_Cap": [
+        {
+            "Year": 2008,
+            "Winner": "Sohail Tanveer",
+            "Team": "RR",
+            "Matches": 11,
+            "Wickets": 22
+        },
+        {
+            "Year": 2009,
+            "Winner": "RP Singh",
+            "Team": "DC",
+            "Matches": 16,
+            "Wickets": 23
+        },
+        {
+            "Year": 2010,
+            "Winner": "Pragyan Ojha",
+            "Team": "DC",
+            "Matches": 16,
+            "Wickets": 21
+        },
+        {
+            "Year": 2011,
+            "Winner": "Lasith Malinga",
+            "Team": "MI",
+            "Matches": 16,
+            "Wickets": 28
+        },
+        {
+            "Year": 2012,
+            "Winner": "Morne Morkel",
+            "Team": "DC",
+            "Matches": 16,
+            "Wickets": 25
+        },
+        {
+            "Year": 2013,
+            "Winner": "Dwayne Bravo",
+            "Team": "CSK",
+            "Matches": 18,
+            "Wickets": 32
+        },
+        {
+            "Year": 2014,
+            "Winner": "Mohit Sharma",
+            "Team": "CSK",
+            "Matches": 16,
+            "Wickets": 23
+        },
+        {
+            "Year": 2015,
+            "Winner": "Dwayne Bravo",
+            "Team": "CSK",
+            "Matches": 16,
+            "Wickets": 26
+        },
+        {
+            "Year": 2016,
+            "Winner": "Bhuvneshwar Kumar",
+            "Team": "SRH",
+            "Matches": 17,
+            "Wickets": 23
+        },
+        {
+            "Year": 2017,
+            "Winner": "Bhuvneshwar Kumar",
+            "Team": "SRH",
+            "Matches": 14,
+            "Wickets": 26
+        },
+        {
+            "Year": 2018,
+            "Winner": "Andrew Tye",
+            "Team": "PBKS",
+            "Matches": 14,
+            "Wickets": 24
+        },
+        {
+            "Year": 2019,
+            "Winner": "Imran Tahir",
+            "Team": "CSK",
+            "Matches": 17,
+            "Wickets": 26
+        },
+        {
+            "Year": 2020,
+            "Winner": "Kagiso Rabada",
+            "Team": "DC",
+            "Matches": 17,
+            "Wickets": 30
+        },
+        {
+            "Year": 2021,
+            "Winner": "Harshal Patel",
+            "Team": "RCB",
+            "Matches": 15,
+            "Wickets": 32
+        },
+        {
+            "Year": 2022,
+            "Winner": "Yuzvendra Chahal",
+            "Team": "RR",
+            "Matches": 17,
+            "Wickets": 27
         }
     ]
 }

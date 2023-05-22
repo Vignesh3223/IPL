@@ -144,3 +144,28 @@ function loadTable4() {
     }
 }
 loadTable4();
+
+/*orange cap winners display*/
+function loadTable5() {
+    const xhttp = new XMLHttpRequest
+    xhttp.open("GET", "http://localhost:3000/Purple_Cap");
+    xhttp.send();
+    xhttp.onreadystatechange = function () {
+        if (this.readyState == 4 && this.status == 200) {
+            console.log(this.responseText);
+            var trHTML = "";
+            const objects = JSON.parse(this.responseText);
+            for (let object of objects) {
+                trHTML += "<tr>";
+                trHTML += "<td>" + object["Year"] + "</td>";
+                trHTML += "<td>" + object["Winner"] + "</td>";
+                trHTML += "<td>" + object["Team"] + "</td>";
+                trHTML += "<td>" + object["Matches"] + "</td>";
+                trHTML += "<td>" + object["Wickets"] + "</td>";
+                trHTML += "</tr>";
+            }
+            document.getElementById("record5").innerHTML = trHTML;
+        }
+    }
+}
+loadTable5();
