@@ -10,6 +10,9 @@
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <link rel="icon" href="assets/images/logo.png" type="image/png">
     <script src="https://kit.fontawesome.com/d7200c44d8.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
     <script src="assets/js/form-validation.js"></script>
     <title>IPL</title>
 </head>
@@ -1051,31 +1054,40 @@
         <h1>FEEDBACK</h1>
         <div class="p1">
             <img class="pt-2 pb-2 ms-5" src="assets/images/comments.jpg" alt="comment">
-            <form class="pe-3" id="comment">
+            <form class="pe-3 validate" id="comment">
                 <div class="form-group mb-2">
                     <label for="name">
                         <span class="badge bg-info">
                             <i class="fas fa-user"></i>
-                            Name</span>
+                            Name
+                        </span>
                     </label>
-                    <input type="text" id="name" class="form-control" placeholder="Enter your name" required>
+                    <input type="text" id="name" name="name" class="form-control" placeholder="Enter your name"
+                        required>
                 </div>
                 <div class="form-group mb-2">
                     <label for="email">
-                        <span class="badge bg-warning"><i class="fas fa-envelope"></i>
-                            Email</span>
+                        <span class="badge bg-warning">
+                            <i class="fas fa-envelope"></i>
+                            Email
+                        </span>
                     </label>
-                    <input type="email" id="email" class="form-control" placeholder="Enter your email" required>
+                    <input type="email" id="email" name="email" class="form-control" placeholder="Enter your email"
+                        required>
                 </div>
                 <div class="form-group">
                     <label for="comments">
-                        <span class="badge bg-dark"> <i class="fas fa-comments"></i>
-                            Comments</span>
+                        <span class="badge bg-dark">
+                            <i class="fas fa-comments"></i>
+                            Comments
+                        </span>
                     </label>
-                    <textarea rows="5" id="comments" class="form-control" placeholder="Enter your comments"></textarea>
+                    <textarea rows="5" id="comments" name="comments" class="form-control"
+                        placeholder="Enter your comments"></textarea>
                 </div>
-                <button type="submit" class="btn btn-primary mt-3" onclick="comment()">Submit</button>
+                <button type="submit" class="btn btn-primary mt-3">Submit</button>
             </form>
+
         </div>
     </div>
     <!--layer 7-->
@@ -1097,19 +1109,19 @@
                 <p><i class="fa-solid fa-phone"></i>+91 22 22800354</p>
             </div>
             <div class="col-4 pt-3 pe-3 teams">
-              <h1>TEAMS</h1>
-              <ul>
-                <li><a href="#teams">Mumbai Indians</a></li>
-                <li><a href="#teams">Chennai Super Kings</a></li>
-                <li><a href="#teams">Delhi Capitals</a></li>
-                <li><a href="#teams">Gujarat Titans</a></li>
-                <li><a href="#teams">Royal Challengers Bangalore</a></li>
-                <li><a href="#teams">Sunrisers Hyderabad</a></li>
-                <li><a href="#teams">Punjab Kings</a></li>
-                <li><a href="#teams">Lucknow Super Giants</a></li>
-                <li><a href="#teams">Kolkata Knight Riders</a></li>
-                <li><a href="#teams">Rajasthan Royals</a></li>
-              </ul>
+                <h1>TEAMS</h1>
+                <ul>
+                    <li><a href="#teams">Mumbai Indians</a></li>
+                    <li><a href="#teams">Chennai Super Kings</a></li>
+                    <li><a href="#teams">Delhi Capitals</a></li>
+                    <li><a href="#teams">Gujarat Titans</a></li>
+                    <li><a href="#teams">Royal Challengers Bangalore</a></li>
+                    <li><a href="#teams">Sunrisers Hyderabad</a></li>
+                    <li><a href="#teams">Punjab Kings</a></li>
+                    <li><a href="#teams">Lucknow Super Giants</a></li>
+                    <li><a href="#teams">Kolkata Knight Riders</a></li>
+                    <li><a href="#teams">Rajasthan Royals</a></li>
+                </ul>
             </div>
         </div>
     </div>

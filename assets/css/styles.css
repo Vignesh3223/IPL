@@ -282,6 +282,10 @@
     font-weight: 400;
 }
 
+form .error{
+    color: red;
+}
+
 /*layer 7*/
 .page8 {
     background: #2193b0;
