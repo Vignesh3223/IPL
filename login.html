@@ -10,6 +10,8 @@
     <!--Bootstrap-->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!--Favicon-->
+   <link rel="icon" href="assets/images/lock-key.png">
     <!--Font-awesome-->
     <script src="https://kit.fontawesome.com/d7200c44d8.js" crossorigin="anonymous"></script>
     <!--jquery validation-->
@@ -18,7 +20,7 @@
     <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
     <!--external JS-->
     <script src="assets/js/login-validation.js"></script>
-    <title>Document</title>
+    <title>LOGIN</title>
 </head>
 
 <body>
@@ -26,18 +28,21 @@
         <div class="row justify-content-start align-items-center vh-100">
             <div class="col-4 layout">
                 <h2><i class="fa-solid fa-circle-user fa-beat fa-2x pt-2" style="color: #f7f7f7;"></i></h2>
-                <form method="post" action="index.html">
+                <form method="post" action="">
                     <div class="mb-3 p-3">
-                        <label for="username" class="form-label">Username</label>
+                        <label for="username" class="form-label"><i class="fa-solid fa-pen fa-sm"
+                                style="color: #ffffff;"></i> Username</label>
                         <input type="text" class="form-control" name="username" id="username"
                             placeholder="Enter your username">
                     </div>
                     <div class="mb-3 p-3">
-                        <label for="password" class="form-label">Password</label>
+                        <label for="password" class="form-label"><i class="fa-solid fa-lock fa-sm"
+                                style="color: #ffffff;"></i> Password</label>
                         <input type="password" class="form-control" name="password" id="password"
                             placeholder="Enter your password">
                     </div>
-                    <button type="submit" class="btn btn-dark ms-3 mb-3">Login</button>
+                    <button type="submit" class="btn btn-info ms-3 mb-3" id="loginbutton">Login
+                        <i class="fa-solid fa-right-to-bracket fa-lg" style="color: #000205;"></i></button>
                 </form>
             </div>
             <div class="col-3"></div>
