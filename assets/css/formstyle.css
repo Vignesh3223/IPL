@@ -1,0 +1,29 @@
+h2 {
+    text-align: center;
+    font-family: Algerian;
+    color: #ffff;
+}
+
+body {
+    background-image: url(/assets/images/back1.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.layout {
+    background-image: url(/assets/images/formback.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+}
+
+form label {
+    color: #ffff;
+    font-family: Times New roman;
+    font-weight: 700;
+    font-size: larger;
+}
+
+form .error {
+    color: red;
+}
