@@ -346,7 +346,7 @@ function CreateBatsmanBox() {
             else if (!Innings.match(/^\d{2}$/)) {
                 Swal.showValidationMessage('Matches played should be a Number and contains only one/two digits');
             }
-            else if (!Highest_Score.match(/^\d+$/)) {
+            else if (!Highest_Score.match(/^\d+\*?$/)) {
                 Swal.showValidationMessage('Highest Score must be a Number.');
             }
             else if (!Average.match(/^\d*\.?\d+$/)) {
