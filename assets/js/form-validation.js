@@ -248,7 +248,7 @@ loadTable3();
 
 function CreateTeamBox() {
     Swal.fire({
-        title: "ADD WINNING TEAM STATS",
+        title: "ADD WINNING TEAM",
         html:
             '<input id="id" type="hidden">' +
             '<input id="Team" class="swal2-input" placeholder="Team Name" required>' +
