@@ -66,6 +66,7 @@ function loadTable() {
 }
 loadTable();
 
+/*new record creation in winners and runners table*/
 function CreateWinnerBox() {
     Swal.fire({
         title: "ADD WINNER & RUNNER",
@@ -91,6 +92,37 @@ function CreateWinnerBox() {
             }
         }
     });
+}
+
+function addWinner() {
+    const Year = document.getElementById("Year").value;
+    const Winner = document.getElementById("Winner").value;
+    const Wonby = document.getElementById("Won by").value;
+    const Runner = document.getElementById("Runner Up").value;
+    const Venue = document.getElementById("Venue").value;
+    const xhttp = new XMLHttpRequest();
+    xhttp.open("POST", "http://localhost:3000/Winners");
+    xhttp.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+    xhttp.send(
+        JSON.stringify({
+            Year: Year,
+            Winner: Winner,
+            Wonby: Wonby,
+            Runner: Runner,
+            Venue: Venue,
+        })
+    );
+    xhttp.onreadystatechange = function () {
+        if (this.readyState == 4 && this.status == 200) {
+            const objects = JSON.parse(this.responseText);
+            Swal.fire({
+                icon: 'success',
+                title: 'Record added',
+                text: objects["message"]
+            });
+            loadTable();
+        }
+    };
 }
 
 
@@ -146,6 +178,37 @@ function CreatePlayersBox() {
     });
 }
 
+function addPlayers() {
+    const Year = document.getElementById("Year").value;
+    const Winner = document.getElementById("Winner").value;
+    const Captain = document.getElementById("Captain").value;
+    const Man = document.getElementById("Man of the Match").value;
+    const Player = document.getElementById("Player of the Series").value;
+    const xhttp = new XMLHttpRequest();
+    xhttp.open("POST", "http://localhost:3000/Captains");
+    xhttp.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+    xhttp.send(
+        JSON.stringify({
+            Year: Year,
+            Winner: Winner,
+            Captain: Captain,
+            Man: Man,
+            Player: Player,
+        })
+    );
+    xhttp.onreadystatechange = function () {
+        if (this.readyState == 4 && this.status == 200) {
+            const objects = JSON.parse(this.responseText);
+            Swal.fire({
+                icon: 'success',
+                title: 'Record added',
+                text: objects["message"]
+            });
+            loadTable2();
+        }
+    };
+}
+
 /*most wins table display*/
 function loadTable3() {
     const xhttp = new XMLHttpRequest
@@ -196,7 +259,7 @@ function CreateTeamBox() {
 /*orange cap winners display*/
 function loadTable4() {
     const xhttp = new XMLHttpRequest
-    xhttp.open("GET", " http://localhost:3000/Orange_Cap");
+    xhttp.open("GET", "http://localhost:3000/Orange_Cap");
     xhttp.send();
     xhttp.onreadystatechange = function () {
         if (this.readyState == 4 && this.status == 200) {
@@ -262,6 +325,49 @@ function CreateBatsmanBox() {
         }
     });
 }
+function addBatsman() {
+    const Year = document.getElementById("Year").value;
+    const Winner = document.getElementById("Winner").value;
+    const Innings = document.getElementById("Innings").value;
+    const Runs = document.getElementById("Runs").value;
+    const Highest = document.getElementById("Highest Score").value;
+    const Average = document.getElementById("Average").value;
+    const SR = document.getElementById("Strike Rate").value;
+    const fifties = document.getElementById("50s").value;
+    const hundreds = document.getElementById("100s").value;
+    const fours = document.getElementById("4s").value;
+    const sixes = document.getElementById("6s").value;
+    const xhttp = new XMLHttpRequest();
+    xhttp.open("POST", "http://localhost:3000/Orange_Cap");
+    xhttp.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+    xhttp.send(
+        JSON.stringify({
+            Year: Year,
+            Winner: Winner,
+            Innings: Innings,
+            Runs: Runs,
+            Highest: Highest,
+            Average: Average,
+            SR: SR,
+            fifties: fifties,
+            hundreds: hundreds,
+            fours: fours,
+            sixes: sixes,
+        })
+    );
+    xhttp.onreadystatechange = function () {
+        if (this.readyState == 4 && this.status == 200) {
+            const objects = JSON.parse(this.responseText);
+            Swal.fire({
+                icon: 'success',
+                title: 'Record added',
+                text: objects["message"]
+            });
+            loadTable4();
+        }
+    };
+}
+
 /*orange cap winners display*/
 function loadTable5() {
     const xhttp = new XMLHttpRequest
@@ -312,4 +418,35 @@ function CreateBowlerBox() {
             }
         }
     });
+}
+
+function addPlayers() {
+    const Year = document.getElementById("Year").value;
+    const Winner = document.getElementById("Winner").value;
+    const Team = document.getElementById("Team").value;
+    const Matches = document.getElementById("Matches").value;
+    const Wickets = document.getElementById("Wickets").value;
+    const xhttp = new XMLHttpRequest();
+    xhttp.open("POST", "http://localhost:3000/Purple_Cap");
+    xhttp.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+    xhttp.send(
+        JSON.stringify({
+            Year: Year,
+            Winner: Winner,
+            Team: Team,
+            Matches: Matches,
+            Wickets: Wickets,
+        })
+    );
+    xhttp.onreadystatechange = function () {
+        if (this.readyState == 4 && this.status == 200) {
+            const objects = JSON.parse(this.responseText);
+            Swal.fire({
+                icon: 'success',
+                title: 'Record added',
+                text: objects["message"]
+            });
+            loadTable5();
+        }
+    };
 }
