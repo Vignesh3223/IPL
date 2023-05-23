@@ -397,6 +397,10 @@ form .error {
     }
 
     .page6 h4 {
-        
+        height: 100px;
+    }
+
+    .page6 #header1 {
+        height: 150px;
     }
 }
