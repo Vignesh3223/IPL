@@ -247,44 +247,44 @@
     {
       "id": 1,
       "Team": "Mumbai Indians",
-      "Trophy": "5 times",
+      "Trophy": 5,
       "Year": "2013, 2015, 2017, 2019, 2020"
     },
     {
       "id": 2,
       "Team": "Chennai Super Kings",
-      "Trophy": "4 times",
+      "Trophy": 4,
       "Year": "2010, 2011, 2018, 2021"
     },
     {
       "id": 3,
       "Team": "Kolkata Knight Riders",
-      "Trophy": "2 times",
+      "Trophy": 2,
       "Year": "2012, 2014"
     },
     {
       "id": 4,
       "Team": "Sunrisers Hyderabad",
-      "Trophy": "1 time",
+      "Trophy": 1,
       "Year": "2016"
     },
     {
       "id": 5,
       "Team": "Rajasthan Royals",
-      "Trophy": "1 time",
+      "Trophy": 1,
       "Year": "2008"
     },
     {
       "id": 6,
       "Team": "Deccan Chargers",
-      "Trophy": "1 time",
+      "Trophy": 1,
       "Year": "2009"
     },
     {
       "id": 7,
       "Team": "Gujarat Titans",
-      "Trophy": "1 time",
-      "Year": "2022"
+      "Trophy": 1,
+      "Year": "2022",
     }
   ],
   "Orange_Cap": [

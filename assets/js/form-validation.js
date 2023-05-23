@@ -89,10 +89,10 @@ function CreateWinnerBox() {
             const Venue = document.getElementById("Venue").value;
             if (!Year || !Winner || !Won_by || !Runner_Up || !Venue) {
                 Swal.showValidationMessage("Please fill in all the fields");
-            } 
+            }
             else if (!Year.match(/^\d{4}$/)) {
                 Swal.showValidationMessage('Invalid year format. Please enter a valid year (YYYY).');
-            } 
+            }
             else {
                 addWinner();
             }
@@ -179,10 +179,10 @@ function CreatePlayersBox() {
             const Player_of_the_Series = document.getElementById("Player_of_the_Series").value;
             if (!Year || !Winner || !Captain || !Man_of_the_Match || !Player_of_the_Series) {
                 Swal.showValidationMessage("Please fill in all the fields");
-            } 
+            }
             else if (!Year.match(/^\d{4}$/)) {
                 Swal.showValidationMessage('Invalid year format. Please enter a valid year (YYYY).');
-            } 
+            }
             else {
                 addPlayers();
             }
@@ -252,26 +252,66 @@ function CreateTeamBox() {
         html:
             '<input id="id" type="hidden">' +
             '<input id="Team" class="swal2-input" placeholder="Team Name" required>' +
-            '<input id="Trophy" class="swal2-input" placeholder="Trophy Count" required>' +
             '<input id="Year" class="swal2-input" placeholder="Year" required>',
         focusConfirm: false,
         showCancelButton: true,
         cancelButtonColor: '#d33',
         preConfirm: () => {
             const Team = document.getElementById("Team").value;
-            const Trophy = document.getElementById("Trophy").value;
             const Year = document.getElementById("Year").value;
-            if (!Team || !Trophy || !Year) {
+            if (!Team || !Year) {
                 Swal.showValidationMessage("Please fill in all the fields");
-            } 
+            }
             else if (!Year.match(/^\d{4}$/)) {
                 Swal.showValidationMessage('Invalid year format. Please enter a valid year (YYYY).');
-            } 
+            }
             else {
-                addTeamstats();
+                addTeamstats(Team, Year);
             }
         }
     });
+}
+
+function addTeamstats(team, year) {
+    const xhttp = new XMLHttpRequest
+    xhttp.open("GET", "http://localhost:3000/Most_Wins");
+    xhttp.send();
+    xhttp.onreadystatechange = function () {
+        if (this.readyState == 4 && this.status == 200) {
+            console.log(this.responseText);
+            const objects = JSON.parse(this.responseText);
+            var present = false;
+            for (let object of objects) {
+                if (team == object['Team']) {
+                    const xhttpObj = new XMLHttpRequest();
+                    xhttpObj.open("PUT", `http://localhost:3000/Most_Wins/${object["id"]}`);
+                    xhttpObj.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+                    xhttpObj.send(
+                        JSON.stringify({
+                            Team: object['Team'],
+                            Trophy: 1 + object['Trophy'],
+                            Year: object['Year'] + `,${year}`
+                        })
+                    );
+                    present = true
+                    break;
+                }
+            }
+            if (!present) {
+                const xhttp = new XMLHttpRequest();
+                xhttp.open("POST", "http://localhost:3000/Most_Wins");
+                xhttp.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+                xhttp.send(
+                    JSON.stringify({
+                        Team: team,
+                        Trophy: 1,
+                        Year: year
+                    })
+                );
+            }
+
+        }
+    }
 }
 
 /*orange cap winners display*/

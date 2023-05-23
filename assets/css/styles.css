@@ -355,26 +355,27 @@ form .error {
 
 /*Sweetalert*/
 .swal2-popup {
-    background-image: url(/assets/images/swalback.png);
-    background-size: contain;
+    background-image: url(/assets/images/swalback.png)!important;
+    background-size: contain !important;
 }
 
 .swal2-title {
-    color: #ffff;
+    color: #ffff !important;
 }
 
 .swal2-input {
-    border: 3px solid #fff;
+    border: 3px solid #fff !important;
+    color: #ffff !important;
 }
 
 .swal2-input::placeholder {
-    color: #ffff;
+    color: #ffff !important;
 }
 
 .swal2-validation-message {
-    color: #ff0000;
-    font-size: 14px;
-    font-weight: 500;
+    color: #ff0000 !important;
+    font-size: 14px !important;
+    font-weight: 500 !important;
 }
 
 /*media query*/
