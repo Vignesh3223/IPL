@@ -89,6 +89,8 @@ function CreateWinnerBox() {
             const Venue = document.getElementById("Venue").value;
             if (!Year || !Winner || !Won_by || !Runner_Up || !Venue) {
                 Swal.showValidationMessage("Please fill in all the fields");
+            } else if (!Year.match(/^\d{4}$/)) {
+                Swal.showValidationMessage('Invalid year format. Please enter a valid year (YYYY).');
             } else {
                 addWinner();
             }
@@ -175,6 +177,8 @@ function CreatePlayersBox() {
             const Player_of_the_Series = document.getElementById("Player_of_the_Series").value;
             if (!Year || !Winner || !Captain || !Man_of_the_Match || !Player_of_the_Series) {
                 Swal.showValidationMessage("Please fill in all the fields");
+            } else if (!Year.match(/^\d{4}$/)) {
+                Swal.showValidationMessage('Invalid year format. Please enter a valid year (YYYY).');
             } else {
                 addPlayers();
             }
@@ -255,6 +259,8 @@ function CreateTeamBox() {
             const Year = document.getElementById("Year").value;
             if (!Team || !Trophy || !Year) {
                 Swal.showValidationMessage("Please fill in all the fields");
+            } else if (!Year.match(/^\d{4}$/)) {
+                Swal.showValidationMessage('Invalid year format. Please enter a valid year (YYYY).');
             } else {
                 addTeamstats();
             }
@@ -327,7 +333,35 @@ function CreateBatsmanBox() {
             const sixes = document.getElementById("sixes").value;
             if (!Year || !Winner || !Innings || !Runs || !Highest_Score || !Average || !Strike_Rate || !fifties || !hundreds || !fours || !sixes) {
                 Swal.showValidationMessage("Please fill in all the fields");
-            } else {
+            } 
+            else if (!Year.match(/^\d{4}$/)) {
+                Swal.showValidationMessage('Invalid year format. Please enter a valid year (YYYY).');
+            }
+             else if (!Innings.match(/^\d{2}$/)) {
+                Swal.showValidationMessage('Matches played should be a Number and contains only one/two digits');
+            } 
+            else if (!Highest_Score.match(/^\d+$/)) {
+                Swal.showValidationMessage('Highest Score must be a Number.');
+            } 
+            else if (!Average.match(/^\d*\.?\d+$/)) {
+                Swal.showValidationMessage('Average must be a Number or in Decimal Format.');
+            }
+            else if (!Strike_Rate.match(/^\d*\.?\d+$/)) {
+                Swal.showValidationMessage('Strike Rate must be a Number or in Decimal Format.');
+            }
+            else if (!fifties.match(/^\d+$/)) {
+                Swal.showValidationMessage('Count of Half-centuries must be a Number.');
+            }
+            else if (!hundreds.match(/^\d+$/)) {
+                Swal.showValidationMessage('Count of Centuries must be a Number.');
+            }
+            else if (!fours.match(/^\d+$/)) {
+                Swal.showValidationMessage('Count of Fours must be a Number.');
+            }
+            else if (!sixes.match(/^\d+$/)) {
+                Swal.showValidationMessage('Count of Sixes must be a Number.');
+            }
+            else {
                 addBatsman();
             }
         }
@@ -423,6 +457,10 @@ function CreateBowlerBox() {
             const Wickets = document.getElementById("Wickets").value;
             if (!Year || !Winner || !Team || !Matches || !Wickets) {
                 Swal.showValidationMessage("Please fill in all the fields");
+            } else if (!Year.match(/^\d{4}$/)) {
+                Swal.showValidationMessage('Invalid year format. Please enter a valid year (YYYY).');
+            } else if (!Matches.match(/^\d{2}$/) || !Wickets.match(/^\d{2}$/)) {
+                Swal.showValidationMessage('Matches and Wickets should be in Numbers and contains only two digits');
             } else {
                 addBowler();
             }
