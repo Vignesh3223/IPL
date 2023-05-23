@@ -424,13 +424,13 @@ function CreateBowlerBox() {
             if (!Year || !Winner || !Team || !Matches || !Wickets) {
                 Swal.showValidationMessage("Please fill in all the fields");
             } else {
-                addPlayers();
+                addBowler();
             }
         }
     });
 }
 
-function addPlayers() {
+function addBowler() {
     const Year = document.getElementById("Year").value;
     const Winner = document.getElementById("Winner").value;
     const Team = document.getElementById("Team").value;
