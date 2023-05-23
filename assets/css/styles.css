@@ -360,7 +360,7 @@ form .error {
 }
 
 .swal2-title {
-    color:#ffff;
+    color: #ffff;
 }
 
 .swal2-input {
@@ -370,11 +370,12 @@ form .error {
 .swal2-input::placeholder {
     color: #ffff;
 }
+
 .swal2-validation-message {
     color: #ff0000;
     font-size: 14px;
     font-weight: 500;
-  }
+}
 
 /*media query*/
 @media (max-width:426px) {
