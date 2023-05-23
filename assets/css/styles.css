@@ -355,7 +355,7 @@ form .error {
 
 /*Sweetalert*/
 .swal2-popup {
-    background-image: url(/assets/images/swalback.png)!important;
+    background-image: url(/assets/images/swalback.png) !important;
     background-size: contain !important;
 }
 
@@ -394,5 +394,9 @@ form .error {
 
     .page2 .part2 {
         width: 100%;
+    }
+
+    .page6 h4 {
+        
     }
 }
