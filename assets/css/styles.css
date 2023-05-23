@@ -353,6 +353,26 @@ form .error {
     letter-spacing: normal;
 }
 
+/*Sweetalert*/
+.swal2-popup {
+    background-image: url(/assets/images/swal\ back.webp);
+    background-size: contain;
+    color: #ffff;
+}
+
+.swal2-title {
+    color: #ffff;
+}
+
+.swal2-input {
+    border: 3px solid #fff;
+}
+
+.swal2-input::placeholder {
+    color: #ffff;
+}
+
+/*media query*/
 @media (max-width:426px) {
     .page2 img {
         display: none;
