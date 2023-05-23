@@ -53,6 +53,7 @@ function loadTable() {
             const objects = JSON.parse(this.responseText);
             for (let object of objects) {
                 trHTML += "<tr>";
+                trHTML += "<td>" + object["id"] + "</td>";
                 trHTML += "<td>" + object["Year"] + "</td>";
                 trHTML += "<td>" + object["Winner"] + "</td>";
                 trHTML += "<td>" + object["Won by"] + "</td>";
@@ -71,6 +72,7 @@ function CreateWinnerBox() {
     Swal.fire({
         title: "ADD WINNER & RUNNER",
         html:
+            '<input id="id" type="hidden">' +
             '<input id="Year" class="swal2-input" placeholder="Year" required>' +
             '<input id="Winner" class="swal2-input" placeholder="Winner (Team Name)" required>' +
             '<input id="Won by" class="swal2-input" placeholder="Won by" required>' +
@@ -138,6 +140,7 @@ function loadTable2() {
             const objects = JSON.parse(this.responseText);
             for (let object of objects) {
                 trHTML += "<tr>";
+                trHTML += "<td>" + object["id"] + "</td>";
                 trHTML += "<td>" + object["Year"] + "</td>";
                 trHTML += "<td>" + object["Winner"] + "</td>";
                 trHTML += "<td>" + object["Captain"] + "</td>";
@@ -155,6 +158,7 @@ function CreatePlayersBox() {
     Swal.fire({
         title: "ADD CAPTAIN, MAN OF THE MATCH & PLAYER OF THE SERIES",
         html:
+            '<input id="id" type="hidden">' +
             '<input id="Year" class="swal2-input" placeholder="Year" required>' +
             '<input id="Winner" class="swal2-input" placeholder="Winner" required>' +
             '<input id="Captain" class="swal2-input" placeholder="Captain" required>' +
@@ -221,6 +225,7 @@ function loadTable3() {
             const objects = JSON.parse(this.responseText);
             for (let object of objects) {
                 trHTML += "<tr>";
+                trHTML += "<td>" + object["id"] + "</td>";
                 trHTML += "<td>" + object["Team"] + "</td>";
                 trHTML += "<td>" + object["Trophy"] + "</td>";
                 trHTML += "<td>" + object["Year"] + "</td>";
@@ -237,6 +242,7 @@ function CreateTeamBox() {
     Swal.fire({
         title: "ADD WINNING TEAM STATS",
         html:
+            '<input id="id" type="hidden">' +
             '<input id="Team" class="swal2-input" placeholder="Team Name" required>' +
             '<input id="Trophy" class="swal2-input" placeholder="Trophy Count" required>' +
             '<input id="Year" class="swal2-input" placeholder="Year" required>',
@@ -268,6 +274,7 @@ function loadTable4() {
             const objects = JSON.parse(this.responseText);
             for (let object of objects) {
                 trHTML += "<tr>";
+                trHTML += "<td>" + object["id"] + "</td>";
                 trHTML += "<td>" + object["Year"] + "</td>";
                 trHTML += "<td>" + object["Winner"] + "</td>";
                 trHTML += "<td>" + object["Innings"] + "</td>";
@@ -291,6 +298,7 @@ function CreateBatsmanBox() {
     Swal.fire({
         title: "ADD ORANGE CAP WINNER",
         html:
+            '<input id="id" type="hidden">' +
             '<input id="Year" class="swal2-input" placeholder="Year" required>' +
             '<input id="Winner" class="swal2-input" placeholder="Winner (Player Name)" required>' +
             '<input id="Innings" class="swal2-input" placeholder="Matches Played" required>' +
@@ -380,6 +388,7 @@ function loadTable5() {
             const objects = JSON.parse(this.responseText);
             for (let object of objects) {
                 trHTML += "<tr>";
+                trHTML += "<td>" + object["id"] + "</td>";
                 trHTML += "<td>" + object["Year"] + "</td>";
                 trHTML += "<td>" + object["Winner"] + "</td>";
                 trHTML += "<td>" + object["Team"] + "</td>";
@@ -397,6 +406,7 @@ function CreateBowlerBox() {
     Swal.fire({
         title: "ADD PURPLE CAP WINNER",
         html:
+            '<input id="id" type="hidden">' +
             '<input id="Year" class="swal2-input" placeholder="Year" required>' +
             '<input id="Winner" class="swal2-input" placeholder="Winner (Player Name)" required>' +
             '<input id="Team" class="swal2-input" placeholder="Team" required>' +
