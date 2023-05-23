@@ -56,8 +56,8 @@ function loadTable() {
                 trHTML += "<td>" + object["id"] + "</td>";
                 trHTML += "<td>" + object["Year"] + "</td>";
                 trHTML += "<td>" + object["Winner"] + "</td>";
-                trHTML += "<td>" + object["Won by"] + "</td>";
-                trHTML += "<td>" + object["Runner Up"] + "</td>";
+                trHTML += "<td>" + object["Won_by"] + "</td>";
+                trHTML += "<td>" + object["Runner_Up"] + "</td>";
                 trHTML += "<td>" + object["Venue"] + "</td>";
                 trHTML += "</tr>";
             }
@@ -75,8 +75,8 @@ function CreateWinnerBox() {
             '<input id="id" type="hidden">' +
             '<input id="Year" class="swal2-input" placeholder="Year" required>' +
             '<input id="Winner" class="swal2-input" placeholder="Winner (Team Name)" required>' +
-            '<input id="Won by" class="swal2-input" placeholder="Won by" required>' +
-            '<input id="Runner Up" class="swal2-input" placeholder="Runner Up (Team Name)" required>' +
+            '<input id="Won_by" class="swal2-input" placeholder="Won by" required>' +
+            '<input id="Runner_Up" class="swal2-input" placeholder="Runner Up (Team Name)" required>' +
             '<input id="Venue" class="swal2-input" placeholder="Venue" required>',
         focusConfirm: false,
         showCancelButton: true,
@@ -84,10 +84,10 @@ function CreateWinnerBox() {
         preConfirm: () => {
             const Year = document.getElementById("Year").value;
             const Winner = document.getElementById("Winner").value;
-            const Wonby = document.getElementById("Won by").value;
-            const Runner = document.getElementById("Runner Up").value;
+            const Won_by = document.getElementById("Won_by").value;
+            const Runner_Up = document.getElementById("Runner_Up").value;
             const Venue = document.getElementById("Venue").value;
-            if (!Year || !Winner || !Wonby || !Runner || !Venue) {
+            if (!Year || !Winner || !Won_by || !Runner_Up || !Venue) {
                 Swal.showValidationMessage("Please fill in all the fields");
             } else {
                 addWinner();
@@ -99,8 +99,8 @@ function CreateWinnerBox() {
 function addWinner() {
     const Year = document.getElementById("Year").value;
     const Winner = document.getElementById("Winner").value;
-    const Wonby = document.getElementById("Won by").value;
-    const Runner = document.getElementById("Runner Up").value;
+    const Won_by = document.getElementById("Won_by").value;
+    const Runner_Up = document.getElementById("Runner_Up").value;
     const Venue = document.getElementById("Venue").value;
     const xhttp = new XMLHttpRequest();
     xhttp.open("POST", "http://localhost:3000/Winners");
@@ -109,8 +109,8 @@ function addWinner() {
         JSON.stringify({
             Year: Year,
             Winner: Winner,
-            Wonby: Wonby,
-            Runner: Runner,
+            Won_by: Won_by,
+            Runner_Up: Runner_Up,
             Venue: Venue,
         })
     );
@@ -144,8 +144,8 @@ function loadTable2() {
                 trHTML += "<td>" + object["Year"] + "</td>";
                 trHTML += "<td>" + object["Winner"] + "</td>";
                 trHTML += "<td>" + object["Captain"] + "</td>";
-                trHTML += "<td>" + object["Man of the Match"] + "</td>";
-                trHTML += "<td>" + object["Player of the Series"] + "</td>";
+                trHTML += "<td>" + object["Man_of_the_Match"] + "</td>";
+                trHTML += "<td>" + object["Player_of_the_Series"] + "</td>";
                 trHTML += "</tr>";
             }
             document.getElementById("record2").innerHTML = trHTML;
@@ -162,8 +162,8 @@ function CreatePlayersBox() {
             '<input id="Year" class="swal2-input" placeholder="Year" required>' +
             '<input id="Winner" class="swal2-input" placeholder="Winner" required>' +
             '<input id="Captain" class="swal2-input" placeholder="Captain" required>' +
-            '<input id="Man of the Match" class="swal2-input" placeholder="Man of the Match" required>' +
-            '<input id="Player of the Series" class="swal2-input" placeholder="Player of the Series" required>',
+            '<input id="Man_of_the_Match" class="swal2-input" placeholder="Man of the Match" required>' +
+            '<input id="Player_of_the_Series" class="swal2-input" placeholder="Player of the Series" required>',
         focusConfirm: false,
         showCancelButton: true,
         cancelButtonColor: '#d33',
@@ -171,9 +171,9 @@ function CreatePlayersBox() {
             const Year = document.getElementById("Year").value;
             const Winner = document.getElementById("Winner").value;
             const Captain = document.getElementById("Captain").value;
-            const Man = document.getElementById("Man of the Match").value;
-            const Player = document.getElementById("Player of the Series").value;
-            if (!Year || !Winner || !Captain || !Man || !Player) {
+            const Man_of_the_Match = document.getElementById("Man_of_the_Match").value;
+            const Player_of_the_Series = document.getElementById("Player_of_the_Series").value;
+            if (!Year || !Winner || !Captain || !Man_of_the_Match || !Player_of_the_Series) {
                 Swal.showValidationMessage("Please fill in all the fields");
             } else {
                 addPlayers();
@@ -186,8 +186,8 @@ function addPlayers() {
     const Year = document.getElementById("Year").value;
     const Winner = document.getElementById("Winner").value;
     const Captain = document.getElementById("Captain").value;
-    const Man = document.getElementById("Man of the Match").value;
-    const Player = document.getElementById("Player of the Series").value;
+    const Man_of_the_Match = document.getElementById("Man_of_the_Match").value;
+    const Player_of_the_Series = document.getElementById("Player_of_the_Series").value;
     const xhttp = new XMLHttpRequest();
     xhttp.open("POST", "http://localhost:3000/Captains");
     xhttp.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
@@ -196,8 +196,8 @@ function addPlayers() {
             Year: Year,
             Winner: Winner,
             Captain: Captain,
-            Man: Man,
-            Player: Player,
+            Man_of_the_Match: Man_of_the_Match,
+            Player_of_the_Series: Player_of_the_Series,
         })
     );
     xhttp.onreadystatechange = function () {
@@ -279,13 +279,13 @@ function loadTable4() {
                 trHTML += "<td>" + object["Winner"] + "</td>";
                 trHTML += "<td>" + object["Innings"] + "</td>";
                 trHTML += "<td>" + object["Runs"] + "</td>";
-                trHTML += "<td>" + object["Highest Score"] + "</td>";
+                trHTML += "<td>" + object["Highest_Score"] + "</td>";
                 trHTML += "<td>" + object["Average"] + "</td>";
-                trHTML += "<td>" + object["Strike Rate"] + "</td>";
-                trHTML += "<td>" + object["50s"] + "</td>";
-                trHTML += "<td>" + object["100s"] + "</td>";
-                trHTML += "<td>" + object["4s"] + "</td>";
-                trHTML += "<td>" + object["6s"] + "</td>";
+                trHTML += "<td>" + object["Strike_Rate"] + "</td>";
+                trHTML += "<td>" + object["fifties"] + "</td>";
+                trHTML += "<td>" + object["hundreds"] + "</td>";
+                trHTML += "<td>" + object["fours"] + "</td>";
+                trHTML += "<td>" + object["sixes"] + "</td>";
                 trHTML += "</tr>";
             }
             document.getElementById("record4").innerHTML = trHTML;
@@ -303,13 +303,13 @@ function CreateBatsmanBox() {
             '<input id="Winner" class="swal2-input" placeholder="Winner (Player Name)" required>' +
             '<input id="Innings" class="swal2-input" placeholder="Matches Played" required>' +
             '<input id="Runs" class="swal2-input" placeholder="Total Runs Scored" required>' +
-            '<input id="Highest Score" class="swal2-input" placeholder="Highest Score" required>' +
+            '<input id="Highest_Score" class="swal2-input" placeholder="Highest Score" required>' +
             '<input id="Average" class="swal2-input" placeholder="Average" required>' +
-            '<input id="Strike Rate" class="swal2-input" placeholder="Strike Rate" required>' +
-            '<input id="50s" class="swal2-input" placeholder="Total number of 50s" required>' +
-            '<input id="100s" class="swal2-input" placeholder="Total number of 100s" required>' +
-            '<input id="4s" class="swal2-input" placeholder="Total number of Fours" required>' +
-            '<input id="6s" class="swal2-input" placeholder="Total number of Sixes" required>',
+            '<input id="Strike_Rate" class="swal2-input" placeholder="Strike Rate" required>' +
+            '<input id="fifties" class="swal2-input" placeholder="Total number of 50s" required>' +
+            '<input id="hundreds" class="swal2-input" placeholder="Total number of 100s" required>' +
+            '<input id="fours" class="swal2-input" placeholder="Total number of Fours" required>' +
+            '<input id="sixes" class="swal2-input" placeholder="Total number of Sixes" required>',
         focusConfirm: false,
         showCancelButton: true,
         cancelButtonColor: '#d33',
@@ -318,14 +318,14 @@ function CreateBatsmanBox() {
             const Winner = document.getElementById("Winner").value;
             const Innings = document.getElementById("Innings").value;
             const Runs = document.getElementById("Runs").value;
-            const Highest = document.getElementById("Highest Score").value;
+            const Highest_Score = document.getElementById("Highest_Score").value;
             const Average = document.getElementById("Average").value;
-            const SR = document.getElementById("Strike Rate").value;
-            const fifties = document.getElementById("50s").value;
-            const hundreds = document.getElementById("100s").value;
-            const fours = document.getElementById("4s").value;
-            const sixes = document.getElementById("6s").value;
-            if (!Year || !Winner || !Innings || !Runs || !Highest || !Average || !SR || !fifties || !hundreds || !fours || !sixes) {
+            const Strike_Rate = document.getElementById("Strike_Rate").value;
+            const fifties = document.getElementById("fifties").value;
+            const hundreds = document.getElementById("hundreds").value;
+            const fours = document.getElementById("fours").value;
+            const sixes = document.getElementById("sixes").value;
+            if (!Year || !Winner || !Innings || !Runs || !Highest_Score || !Average || !Strike_Rate || !fifties || !hundreds || !fours || !sixes) {
                 Swal.showValidationMessage("Please fill in all the fields");
             } else {
                 addBatsman();
@@ -338,13 +338,13 @@ function addBatsman() {
     const Winner = document.getElementById("Winner").value;
     const Innings = document.getElementById("Innings").value;
     const Runs = document.getElementById("Runs").value;
-    const Highest = document.getElementById("Highest Score").value;
+    const Highest_Score = document.getElementById("Highest_Score").value;
     const Average = document.getElementById("Average").value;
-    const SR = document.getElementById("Strike Rate").value;
-    const fifties = document.getElementById("50s").value;
-    const hundreds = document.getElementById("100s").value;
-    const fours = document.getElementById("4s").value;
-    const sixes = document.getElementById("6s").value;
+    const Strike_Rate = document.getElementById("Strike_Rate").value;
+    const fifties = document.getElementById("fifties").value;
+    const hundreds = document.getElementById("hundreds").value;
+    const fours = document.getElementById("fours").value;
+    const sixes = document.getElementById("sixes").value;
     const xhttp = new XMLHttpRequest();
     xhttp.open("POST", "http://localhost:3000/Orange_Cap");
     xhttp.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
@@ -354,9 +354,9 @@ function addBatsman() {
             Winner: Winner,
             Innings: Innings,
             Runs: Runs,
-            Highest: Highest,
+            Highest_Score: Highest_Score,
             Average: Average,
-            SR: SR,
+            Strike_Rate: Strike_Rate,
             fifties: fifties,
             hundreds: hundreds,
             fours: fours,

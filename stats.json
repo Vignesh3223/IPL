@@ -1,287 +1,287 @@
 {
     "Winners": [
         {
-            "id":1,
+            "id": 1,
             "Year": 2008,
             "Winner": "Rajasthan Royals",
-            "Won by": "3 Wickets",
-            "Runner Up": "Chennai Super Kings",
+            "Won_by": "3 Wickets",
+            "Runner_Up": "Chennai Super Kings",
             "Venue": "Mumbai"
         },
         {
-            "id":2,
+            "id": 2,
             "Year": 2009,
             "Winner": "Deccan Chargers",
-            "Won by": "6 runs",
-            "Runner Up": "Royal Challengers Bangalore",
+            "Won_by": "6 runs",
+            "Runner_Up": "Royal Challengers Bangalore",
             "Venue": "Johannesburg"
         },
         {
-            "id":3,
+            "id": 3,
             "Year": 2010,
             "Winner": "Chennai Super Kings",
-            "Won by": "22 runs",
-            "Runner Up": "Mumbai Indians",
+            "Won_by": "22 runs",
+            "Runner_Up": "Mumbai Indians",
             "Venue": "Mumbai"
         },
         {
-            "id":4,
+            "id": 4,
             "Year": 2011,
             "Winner": "Chennai Super Kings",
-            "Won by": "58 runs",
-            "Runner Up": "Royal Challengers Bangalore",
+            "Won_by": "58 runs",
+            "Runner_Up": "Royal Challengers Bangalore",
             "Venue": "Chennai"
         },
         {
-            "id":5,
+            "id": 5,
             "Year": 2012,
             "Winner": "Kolkata Knight Riders",
-            "Won by": "5 Wickets",
-            "Runner Up": "Chennai Super Kings",
+            "Won_by": "5 Wickets",
+            "Runner_Up": "Chennai Super Kings",
             "Venue": "Chennai"
         },
         {
-            "id":6,
+            "id": 6,
             "Year": 2013,
             "Winner": "Mumbai Indians",
-            "Won by": "23 runs",
-            "Runner Up": "Chennai Super Kings",
+            "Won_by": "23 runs",
+            "Runner_Up": "Chennai Super Kings",
             "Venue": "Kolkata"
         },
         {
-            "id":7,
+            "id": 7,
             "Year": 2014,
             "Winner": "Kolkata Knight Riders",
-            "Won by": "3 Wickets",
-            "Runner Up": "Kings XI Punjab",
+            "Won_by": "3 Wickets",
+            "Runner_Up": "Kings XI Punjab",
             "Venue": "Bangalore"
         },
         {
-            "id":8,
+            "id": 8,
             "Year": 2015,
             "Winner": "Mumbai Indians",
-            "Won by": "41 runs",
-            "Runner Up": "Chennai Super Kings",
+            "Won_by": "41 runs",
+            "Runner_Up": "Chennai Super Kings",
             "Venue": "Kolkata"
         },
         {
-            "id":9,
+            "id": 9,
             "Year": 2016,
             "Winner": "Sunrisers Hyderabad",
-            "Won by": "8 runs",
-            "Runner Up": "Royal Challengers Bangalore",
+            "Won_by": "8 runs",
+            "Runner_Up": "Royal Challengers Bangalore",
             "Venue": "Bangalore"
         },
         {
-            "id":10,
+            "id": 10,
             "Year": 2017,
             "Winner": "Mumbai Indians",
-            "Won by": "1 run",
-            "Runner Up": "Rising Pune Supergiants",
+            "Won_by": "1 run",
+            "Runner_Up": "Rising Pune Supergiants",
             "Venue": "Hyderabad"
         },
         {
-            "id":11,
+            "id": 11,
             "Year": 2018,
             "Winner": "Chennai Super Kings",
-            "Won by": "8 Wickets",
-            "Runner Up": "Sunrisers Hyderabad",
+            "Won_by": "8 Wickets",
+            "Runner_Up": "Sunrisers Hyderabad",
             "Venue": "Mumbai"
         },
         {
-            "id":12,
+            "id": 12,
             "Year": 2019,
             "Winner": "Mumbai Indians",
-            "Won by": "1 run",
-            "Runner Up": "Chennai Super Kings",
+            "Won_by": "1 run",
+            "Runner_Up": "Chennai Super Kings",
             "Venue": "Hyderabad"
         },
         {
-            "id":13,
+            "id": 13,
             "Year": 2020,
             "Winner": "Mumbai Indians",
-            "Won by": "5 Wickets",
-            "Runner Up": "Delhi Capitals",
+            "Won_by": "5 Wickets",
+            "Runner_Up": "Delhi Capitals",
             "Venue": "Dubai"
         },
         {
-            "id":14,
+            "id": 14,
             "Year": 2021,
             "Winner": "Chennai Super Kings",
-            "Won by": "27 runs",
-            "Runner Up": "Kolkata Knight Riders",
+            "Won_by": "27 runs",
+            "Runner_Up": "Kolkata Knight Riders",
             "Venue": "Dubai"
         },
         {
-            "id":15,
+            "id": 15,
             "Year": 2022,
             "Winner": "Gujarat Titans",
-            "Won by": "7 wickets",
-            "Runner Up": "Rajasthan Royals",
+            "Won_by": "7 wickets",
+            "Runner_Up": "Rajasthan Royals",
             "Venue": "Ahmedabad"
         }
     ],
     "Captains": [
         {
-            "id":1,
+            "id": 1,
             "Year": 2008,
             "Winner": "Rajasthan Royals",
             "Captain": "Shane Warne",
-            "Man of the Match": "Yusuf Pathan",
-            "Player of the Series": "Shane watson"
+            "Man_of_the_Match": "Yusuf Pathan",
+            "Player_of_the_Series": "Shane watson"
         },
         {
-            "id":2,
+            "id": 2,
             "Year": 2009,
             "Winner": "Deccan Chargers",
             "Captain": "Adam Gilchrist",
-            "Man of the Match": "Anil Kumble",
-            "Player of the Series": "Adam Gilchrist"
+            "Man_of_the_Match": "Anil Kumble",
+            "Player_of_the_Series": "Adam Gilchrist"
         },
         {
-            "id":3,
+            "id": 3,
             "Year": 2010,
             "Winner": "Chennai Super Kings",
             "Captain": "MS Dhoni",
-            "Man of the Match": "Suresh Raina",
-            "Player of the Series": "Sachin Tendulkar"
+            "Man_of_the_Match": "Suresh Raina",
+            "Player_of_the_Series": "Sachin Tendulkar"
         },
         {
-            "id":4,
+            "id": 4,
             "Year": 2011,
             "Winner": "Chennai Super Kings",
             "Captain": "MS Dhoni",
-            "Man of the Match": "Murali Vijay",
-            "Player of the Series": "Chris Gayle"
+            "Man_of_the_Match": "Murali Vijay",
+            "Player_of_the_Series": "Chris Gayle"
         },
         {
-            "id":5,
+            "id": 5,
             "Year": 2012,
             "Winner": "Kolkata Knight Riders",
             "Captain": "Gautam Gambhir",
-            "Man of the Match": "Manvinder Bisla",
-            "Player of the Series": "Sunil Narine"
+            "Man_of_the_Match": "Manvinder Bisla",
+            "Player_of_the_Series": "Sunil Narine"
         },
         {
-            "id":6,
+            "id": 6,
             "Year": 2013,
             "Winner": "Mumbai Indians",
             "Captain": "Rohit Sharma",
-            "Man of the Match": "Kieron Pollard",
-            "Player of the Series": "Shane Watson"
+            "Man_of_the_Match": "Kieron Pollard",
+            "Player_of_the_Series": "Shane Watson"
         },
         {
-            "id":7,
+            "id": 7,
             "Year": 2014,
             "Winner": "Kolkata Knight Riders",
             "Captain": "Gautam Gambhir",
-            "Man of the Match": "Manish Pandey",
-            "Player of the Series": "Glenn Maxwell"
+            "Man_of_the_Match": "Manish Pandey",
+            "Player_of_the_Series": "Glenn Maxwell"
         },
         {
-            "id":8,
+            "id": 8,
             "Year": 2015,
             "Winner": "Mumbai Indians",
             "Captain": "Rohit Sharma",
-            "Man of the Match": "Rohit Sharma",
-            "Player of the Series": "Andre Russell"
+            "Man_of_the_Match": "Rohit Sharma",
+            "Player_of_the_Series": "Andre Russell"
         },
         {
-            "id":9,
+            "id": 9,
             "Year": 2016,
             "Winner": "Sunrisers Hyderabad",
             "Captain": "David Warner",
-            "Man of the Match": "Ben Cutting",
-            "Player of the Series": "Virat kohli"
+            "Man_of_the_Match": "Ben Cutting",
+            "Player_of_the_Series": "Virat kohli"
         },
         {
-            "id":10,
+            "id": 10,
             "Year": 2017,
             "Winner": "Mumbai Indians",
             "Captain": "Rohit Sharma",
-            "Man of the Match": "Krunal Pandya",
-            "Player of the Series": "Ben Stokes"
+            "Man_of_the_Match": "Krunal Pandya",
+            "Player_of_the_Series": "Ben Stokes"
         },
         {
-            "id":11,
+            "id": 11,
             "Year": 2018,
             "Winner": "Chennai Super Kings",
             "Captain": "MS Dhoni",
-            "Man of the Match": "Shane Watson",
-            "Player of the Series": "Sunil Narine"
+            "Man_of_the_Match": "Shane Watson",
+            "Player_of_the_Series": "Sunil Narine"
         },
         {
-            "id":12,
+            "id": 12,
             "Year": 2019,
             "Winner": "Mumbai Indians",
             "Captain": "Rohit Sharma",
-            "Man of the Match": "Jasprit Bumrah",
-            "Player of the Series": "Andre Russell"
+            "Man_of_the_Match": "Jasprit Bumrah",
+            "Player_of_the_Series": "Andre Russell"
         },
         {
-            "id":13,
+            "id": 13,
             "Year": 2020,
             "Winner": "Mumbai Indians",
             "Captain": "Rohit Sharma",
-            "Man of the Match": "Trent Boult",
-            "Player of the Series": "Jofra Archer"
+            "Man_of_the_Match": "Trent Boult",
+            "Player_of_the_Series": "Jofra Archer"
         },
         {
-            "id":14,
+            "id": 14,
             "Year": 2021,
             "Winner": "Chennai Super Kings",
             "Captain": "MS Dhoni",
-            "Man of the Match": "Faf du plessis",
-            "Player of the Series": "Harshal Patel"
+            "Man_of_the_Match": "Faf du plessis",
+            "Player_of_the_Series": "Harshal Patel"
         },
         {
-            "id":15,
+            "id": 15,
             "Year": 2022,
             "Winner": "Gujarat Titans",
             "Captain": "Hardik Pandya",
-            "Man of the Match": "Hardik Pandya",
-            "Player of the Series": "Jos Buttler"
+            "Man_of_the_Match": "Hardik Pandya",
+            "Player_of_the_Series": "Jos Buttler"
         }
     ],
     "Most_Wins": [
         {
-            "id":1,
+            "id": 1,
             "Team": "Mumbai Indians",
             "Trophy": "5 times",
             "Year": "2013, 2015, 2017, 2019, 2020"
         },
         {
-            "id":2,
+            "id": 2,
             "Team": "Chennai Super Kings",
             "Trophy": "4 times",
             "Year": "2010, 2011, 2018, 2021"
         },
         {
-            "id":3,
+            "id": 3,
             "Team": "Kolkata Knight Riders",
             "Trophy": "2 times",
             "Year": "2012, 2014"
         },
         {
-            "id":4,
+            "id": 4,
             "Team": "Sunrisers Hyderabad",
             "Trophy": "1 time",
             "Year": "2016"
         },
         {
-            "id":5,
+            "id": 5,
             "Team": "Rajasthan Royals",
             "Trophy": "1 time",
             "Year": "2008"
         },
         {
-            "id":6,
+            "id": 6,
             "Team": "Deccan Chargers",
             "Trophy": "1 time",
             "Year": "2009"
         },
         {
-            "id":7,
+            "id": 7,
             "Team": "Gujarat Titans",
             "Trophy": "1 time",
             "Year": "2022"
@@ -289,219 +289,219 @@
     ],
     "Orange_Cap": [
         {
-            "id":1,
+            "id": 1,
             "Year": 2008,
             "Winner": "Shaun Marsh (KXIP)",
             "Innings": 11,
             "Runs": 616,
-            "Highest Score": 115,
+            "Highest_Score": 115,
             "Average": 68.44,
-            "Strike Rate": 139.68,
-            "50s": 5,
-            "100s": 1,
-            "4s": 59,
-            "6s": 26
+            "Strike_Rate": 139.68,
+            "fifties": 5,
+            "hundreds": 1,
+            "fours": 59,
+            "sixes": 26
         },
         {
-            "id":2,
+            "id": 2,
             "Year": 2009,
             "Winner": "Mathew Hayden (CSK)",
             "Innings": 12,
             "Runs": 572,
-            "Highest Score": 89,
+            "Highest_Score": 89,
             "Average": 52,
-            "Strike Rate": 144.81,
-            "50s": 5,
-            "100s": 0,
-            "4s": 60,
-            "6s": 22
+            "Strike_Rate": 144.81,
+            "fifties": 5,
+            "hundreds": 0,
+            "fours": 60,
+            "sixes": 22
         },
         {
-            "id":3,
+            "id": 3,
             "Year": 2010,
             "Winner": "Sachin Tendulkar (MI)",
             "Innings": 15,
             "Runs": 618,
-            "Highest Score": 89,
+            "Highest_Score": 89,
             "Average": 47.53,
-            "Strike Rate": 132.61,
-            "50s": 5,
-            "100s": 0,
-            "4s": 86,
-            "6s": 3
+            "Strike_Rate": 132.61,
+            "fifties": 5,
+            "hundreds": 0,
+            "fours": 86,
+            "sixes": 3
         },
         {
-            "id":4,
+            "id": 4,
             "Year": 2011,
             "Winner": "Chris Gayle (RCB)",
             "Innings": 12,
             "Runs": 608,
-            "Highest Score": 107,
+            "Highest_Score": 107,
             "Average": 67.55,
-            "Strike Rate": 183.13,
-            "50s": 3,
-            "100s": 2,
-            "4s": 57,
-            "6s": 44
+            "Strike_Rate": 183.13,
+            "fifties": 3,
+            "hundreds": 2,
+            "fours": 57,
+            "sixes": 44
         },
         {
-            "id":5,
+            "id": 5,
             "Year": 2012,
             "Winner": "Chris Gayle (RCB)",
             "Innings": 14,
             "Runs": 733,
-            "Highest Score": 128,
+            "Highest_Score": 128,
             "Average": 61.08,
-            "Strike Rate": 160.74,
-            "50s": 7,
-            "100s": 1,
-            "4s": 46,
-            "6s": 59
+            "Strike_Rate": 160.74,
+            "fifties": 7,
+            "hundreds": 1,
+            "fours": 46,
+            "sixes": 59
         },
         {
-            "id":6,
+            "id": 6,
             "Year": 2013,
             "Winner": "Michael Hussey (CSK)",
             "Innings": 17,
             "Runs": 733,
-            "Highest Score": 95,
+            "Highest_Score": 95,
             "Average": 52.35,
-            "Strike Rate": 129.5,
-            "50s": 6,
-            "100s": 0,
-            "4s": 81,
-            "6s": 17
+            "Strike_Rate": 129.5,
+            "fifties": 6,
+            "hundreds": 0,
+            "fours": 81,
+            "sixes": 17
         },
         {
-            "id":7,
+            "id": 7,
             "Year": 2014,
             "Winner": "Robin Uthappa (KKR)",
             "Innings": 16,
             "Runs": 660,
-            "Highest Score": 83,
+            "Highest_Score": 83,
             "Average": 44,
-            "Strike Rate": 137.78,
-            "50s": 5,
-            "100s": 0,
-            "4s": 74,
-            "6s": 18
+            "Strike_Rate": 137.78,
+            "fifties": 5,
+            "hundreds": 0,
+            "fours": 74,
+            "sixes": 18
         },
         {
-            "id":8,
+            "id": 8,
             "Year": 2015,
             "Winner": "David Warner (SRH)",
             "Innings": 14,
             "Runs": 562,
-            "Highest Score": 91,
+            "Highest_Score": 91,
             "Average": 43.23,
-            "Strike Rate": 156.54,
-            "50s": 7,
-            "100s": 0,
-            "4s": 65,
-            "6s": 21
+            "Strike_Rate": 156.54,
+            "fifties": 7,
+            "hundreds": 0,
+            "fours": 65,
+            "sixes": 21
         },
         {
-            "id":9,
+            "id": 9,
             "Year": 2016,
             "Winner": "Virat Kohli (RCB)",
             "Innings": 16,
             "Runs": 973,
-            "Highest Score": 113,
+            "Highest_Score": 113,
             "Average": 81.08,
-            "Strike Rate": 152.03,
-            "50s": 7,
-            "100s": 4,
-            "4s": 83,
-            "6s": 38
+            "Strike_Rate": 152.03,
+            "fifties": 7,
+            "hundreds": 4,
+            "fours": 83,
+            "sixes": 38
         },
         {
-            "id":10,
+            "id": 10,
             "Year": 2017,
             "Winner": "David warner (SRH)",
             "Innings": 14,
             "Runs": 641,
-            "Highest Score": 126,
+            "Highest_Score": 126,
             "Average": 58.27,
-            "Strike Rate": 141.81,
-            "50s": 4,
-            "100s": 1,
-            "4s": 63,
-            "6s": 26
+            "Strike_Rate": 141.81,
+            "fifties": 4,
+            "hundreds": 1,
+            "fours": 63,
+            "sixes": 26
         },
         {
-            "id":11,
+            "id": 11,
             "Year": 2018,
             "Winner": "Kane Williamson (SRH)",
             "Innings": 17,
             "Runs": 735,
-            "Highest Score": 84,
+            "Highest_Score": 84,
             "Average": 52.5,
-            "Strike Rate": 142.44,
-            "50s": 8,
-            "100s": 0,
-            "4s": 64,
-            "6s": 28
+            "Strike_Rate": 142.44,
+            "fifties": 8,
+            "hundreds": 0,
+            "fours": 64,
+            "sixes": 28
         },
         {
-            "id":12,
+            "id": 12,
             "Year": 2019,
             "Winner": "David Warner (SRH)",
             "Innings": 12,
             "Runs": 692,
-            "Highest Score": 100,
+            "Highest_Score": 100,
             "Average": 69.2,
-            "Strike Rate": 143.87,
-            "50s": 8,
-            "100s": 1,
-            "4s": 57,
-            "6s": 21
+            "Strike_Rate": 143.87,
+            "fifties": 8,
+            "hundreds": 1,
+            "fours": 57,
+            "sixes": 21
         },
         {
-            "id":13,
+            "id": 13,
             "Year": 2020,
             "Winner": "KL Rahul (PBKS)",
             "Innings": 14,
             "Runs": 670,
-            "Highest Score": "132*",
+            "Highest_Score": "132*",
             "Average": 55.83,
-            "Strike Rate": 129.34,
-            "50s": 5,
-            "100s": 1,
-            "4s": 58,
-            "6s": 23
+            "Strike_Rate": 129.34,
+            "fifties": 5,
+            "hundreds": 1,
+            "fours": 58,
+            "sixes": 23
         },
         {
-            "id":14,
+            "id": 14,
             "Year": 2021,
             "Winner": "Ruturaj Gaikwad (CSK)",
             "Innings": 16,
             "Runs": 635,
-            "Highest Score": "101*",
+            "Highest_Score": "101*",
             "Average": 45.35,
-            "Strike Rate": 136.26,
-            "50s": 4,
-            "100s": 1,
-            "4s": 64,
-            "6s": 23
+            "Strike_Rate": 136.26,
+            "fifties": 4,
+            "hundreds": 1,
+            "fours": 64,
+            "sixes": 23
         },
         {
-            "id":15,
+            "id": 15,
             "Year": 2022,
             "Winner": "Jos Buttler (RR)",
             "Innings": 17,
             "Runs": 863,
-            "Highest Score": 116,
+            "Highest_Score": 116,
             "Average": 57.53,
-            "Strike Rate": 149.05,
-            "50s": 4,
-            "100s": 4,
-            "4s": 83,
-            "6s": 45
+            "Strike_Rate": 149.05,
+            "fifties": 4,
+            "hundreds": 4,
+            "fours": 83,
+            "sixes": 45
         }
     ],
     "Purple_Cap": [
         {
-            "id":1,
+            "id": 1,
             "Year": 2008,
             "Winner": "Sohail Tanveer",
             "Team": "RR",
@@ -509,7 +509,7 @@
             "Wickets": 22
         },
         {
-            "id":2,
+            "id": 2,
             "Year": 2009,
             "Winner": "RP Singh",
             "Team": "DC",
@@ -517,7 +517,7 @@
             "Wickets": 23
         },
         {
-            "id":3,
+            "id": 3,
             "Year": 2010,
             "Winner": "Pragyan Ojha",
             "Team": "DC",
@@ -525,7 +525,7 @@
             "Wickets": 21
         },
         {
-            "id":4,
+            "id": 4,
             "Year": 2011,
             "Winner": "Lasith Malinga",
             "Team": "MI",
@@ -533,7 +533,7 @@
             "Wickets": 28
         },
         {
-            "id":5,
+            "id": 5,
             "Year": 2012,
             "Winner": "Morne Morkel",
             "Team": "DC",
@@ -541,7 +541,7 @@
             "Wickets": 25
         },
         {
-            "id":6,
+            "id": 6,
             "Year": 2013,
             "Winner": "Dwayne Bravo",
             "Team": "CSK",
@@ -549,7 +549,7 @@
             "Wickets": 32
         },
         {
-            "id":7,
+            "id": 7,
             "Year": 2014,
             "Winner": "Mohit Sharma",
             "Team": "CSK",
@@ -557,7 +557,7 @@
             "Wickets": 23
         },
         {
-            "id":8,
+            "id": 8,
             "Year": 2015,
             "Winner": "Dwayne Bravo",
             "Team": "CSK",
@@ -565,7 +565,7 @@
             "Wickets": 26
         },
         {
-            "id":9,
+            "id": 9,
             "Year": 2016,
             "Winner": "Bhuvneshwar Kumar",
             "Team": "SRH",
@@ -573,7 +573,7 @@
             "Wickets": 23
         },
         {
-            "id":10,
+            "id": 10,
             "Year": 2017,
             "Winner": "Bhuvneshwar Kumar",
             "Team": "SRH",
@@ -581,7 +581,7 @@
             "Wickets": 26
         },
         {
-            "id":11,
+            "id": 11,
             "Year": 2018,
             "Winner": "Andrew Tye",
             "Team": "PBKS",
@@ -589,7 +589,7 @@
             "Wickets": 24
         },
         {
-            "id":12,
+            "id": 12,
             "Year": 2019,
             "Winner": "Imran Tahir",
             "Team": "CSK",
@@ -597,7 +597,7 @@
             "Wickets": 26
         },
         {
-            "id":13,
+            "id": 13,
             "Year": 2020,
             "Winner": "Kagiso Rabada",
             "Team": "DC",
@@ -605,7 +605,7 @@
             "Wickets": 30
         },
         {
-            "id":14,
+            "id": 14,
             "Year": 2021,
             "Winner": "Harshal Patel",
             "Team": "RCB",
@@ -613,7 +613,7 @@
             "Wickets": 32
         },
         {
-            "id":15,
+            "id": 15,
             "Year": 2022,
             "Winner": "Yuzvendra Chahal",
             "Team": "RR",
