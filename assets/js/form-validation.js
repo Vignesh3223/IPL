@@ -22,7 +22,7 @@ $(document).ready(function () {
                 required: "Please enter a Name",
                 minlength: "Name must be at least 2 characters long",
                 maxlength: "Name must not exceed 20 characters",
-                pattern: " Username must contain only alpabets"
+                pattern: " Name must contain only alpabets"
             },
             email: {
                 required: "Please enter a valid Email",

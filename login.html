@@ -18,8 +18,6 @@
     <script src="https://cdn.jsdelivr.net/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
     <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
-    <!--external JS-->
-    <script src="assets/js/login-validation.js"></script>
     <!--Sweetalert-->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.16/dist/sweetalert2.all.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
@@ -46,8 +44,64 @@
         </nav>
     </div>
     <div class="container-fluid page1">
+        <div class="row pt-2">
+            <div class="col-3"></div>
+            <div class="col-6">
+                <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="assets/images/BCCI.png" class="d-block w-100" alt="BCCI">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>FOUNDATION</h5>
+                                <p>The Indian Cricket League (ICL) was founded in 2007 with funding provided
+                                    by Zee Entertainment Enterprises.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/images/ipltrophy.webp" class="d-block w-100" alt="trophy">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>TROPHY</h5>
+                                <p>On the top of this gold IPL trophy, it is written in Sanskrit, “Yatra Pratibha Avsara
+                                    Prapnotihi”. It means where talent and time meet. At the same time, the names of all
+                                    the teams that won these projects are also mentioned in this award.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/images/teamlogos.jpg" class="d-block w-100" alt="logo">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>TORNAMENT FORMAT</h5>
+                                <p>With a total of 10 teams in title contention, the IPL 2023 will also be played in a
+                                    double round-robin format. Hence, each team will face other teams two times during
+                                    the
+                                    league stage. In the end, the top four teams in the points table will qualify for
+                                    playoffs.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+            <div class="col-3"></div>
+        </div>
         <div class="row pb-5">
-            <div class="col-6 mt-5 mb-5">
+            <div class="col-6 mt-5 pt-5 mb-5">
                 <div class="card-container">
                     <div class="card">
                         <div class="card-front">
@@ -65,9 +119,8 @@
                     </div>
                 </div>
             </div>
-
             <div class="col-2"></div>
-            <div class="col-4 mt-5 pt-3">
+            <div class="col-4 mt-5 pt-5">
                 <img src="assets/images/loginimage.png" alt="player" class="img-fluid">
             </div>
         </div>
@@ -85,23 +138,23 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <form>
+                    <form id="login-form" onsubmit="validateLogin(); return false" method="get" action="">
                         <div class="form-group pb-2">
-                            <label for="email"><i class="fa-sharp fa-solid fa-envelope" style="color: #000000;"></i>
-                                Email</label>
-                            <input type="email" class="form-control" id="email" placeholder="Enter email">
+                            <label for="name"><i class="fa-sharp fa-solid fa-pen" style="color: #ffff;"></i>
+                                Username</label>
+                            <input type="name" class="form-control" id="name" name="name" placeholder="Enter Username" required>
                         </div>
                         <div class="form-group">
-                            <label for="password"><i class="fa-solid fa-lock" style="color: #000000;"></i>
+                            <label for="password"><i class="fa-solid fa-lock" style="color: #ffff;"></i>
                                 Password</label>
-                            <input type="password" class="form-control" id="password" placeholder="Enter password">
+                            <input type="password" class="form-control" id="password" name="password" placeholder="Enter password" required>
                         </div>
-                    </form>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Login</button>
+                    <button type="submit"  class="btn btn-primary">Login</button>
                 </div>
+            </form>
             </div>
         </div>
     </div>
@@ -114,42 +167,44 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <form>
+                    <form id="signup-form" onsubmit="validateSignUp(); return false" method="get" action="">
                         <div class="form-group pb-2">
-                            <label for="name"><i class="fa-sharp fa-solid fa-pen" style="color: #000000;"></i> Full
+                            <label for="name"><i class="fa-sharp fa-solid fa-pen" style="color: #ffff;"></i> Full
                                 Name</label>
-                            <input type="text" class="form-control" id="name" placeholder="Enter your full name">
+                            <input type="text" class="form-control" id="fname" name="fname" placeholder="Enter your full name">
                         </div>
                         <div class="form-group pb-2">
-                            <label for="email"><i class="fa-sharp fa-solid fa-envelope" style="color: #000000;"></i>
+                            <label for="email"><i class="fa-sharp fa-solid fa-envelope" style="color: #ffff;"></i>
                                 Email</label>
-                            <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                            <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email">
                         </div>
                         <div class="form-group pb-2">
-                            <label for="password"><i class="fa-solid fa-lock" style="color: #000000;"></i>
+                            <label for="password"><i class="fa-solid fa-lock" style="color: #ffff;"></i>
                                 Password</label>
-                            <input type="password" class="form-control" id="password" placeholder="Enter a password">
+                            <input type="password" class="form-control" id="passwd" name="passwd" placeholder="Enter a password">
                         </div>
                         <div class="form-group pb-2">
-                            <label for="confirmPassword"><i class="fa-solid fa-lock" style="color: #000000;"></i>
+                            <label for="confirmPassword"><i class="fa-solid fa-lock" style="color: #ffff;"></i>
                                 Confirm Password</label>
-                            <input type="password" class="form-control" id="confirmPassword"
+                            <input type="password" class="form-control" id="confirmPassword" name="confirmPassword"
                                 placeholder="Confirm your password">
                         </div>
                         <div class="form-group">
-                            <label for="phone"><i class="fa-sharp fa-solid fa-phone" style="color: #000000;"></i> Phone
+                            <label for="phone"><i class="fa-sharp fa-solid fa-phone" style="color: #ffff;"></i> Phone
                                 Number</label>
-                            <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number">
+                            <input type="tel" class="form-control" id="phone" name="phone" placeholder="Enter your phone number">
                         </div>
-                    </form>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Sign Up</button>
+                    <button type="submit" class="btn btn-primary">Sign Up</button>
                 </div>
+            </form>
             </div>
         </div>
     </div>
+     <!--external JS-->
+     <script src="assets/js/login-validation.js"></script>
 </body>
 
 </html>

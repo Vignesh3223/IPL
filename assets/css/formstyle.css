@@ -124,3 +124,7 @@ form label {
     background-image: url(/assets/images/modalback.avif);
     background-size: contain;
 }
+
+form .error{
+    color: red;
+}

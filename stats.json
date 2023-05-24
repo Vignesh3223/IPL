@@ -621,11 +621,19 @@
       "Wickets": 27
     }
   ],
-  "Users":[
+  "Users": [
     {
-      "id":1,
-      "username":"Admin",
-      "password":"Admin@123"
+      "id": 1,
+      "username": "Admin",
+      "password": "Admin@123"
+    },
+    {
+      "fname": "refrtgtg",
+      "email": "rthgrh",
+      "passwdn": "tgtrg",
+      "confirmPassword": "rtgrtg",
+      "phone": "rtgrtg",
+      "id": 2
     }
   ]
 }
