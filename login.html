@@ -36,8 +36,11 @@
                     <img id="logo" src="assets/images/ipl header.png" alt="header">
                 </a>
                 <form class="d-flex">
-                    <button class="btn btn-dark me-2" onclick="login()">Login</button>
-                    <button class="btn btn-dark" onclick="signup()">Sign Up</button>
+                    <button type="button" class="btn btn-dark me-3" data-bs-toggle="modal" data-bs-target="#loginModal">
+                        Login </button>
+                    <button type="button" class="btn btn-dark me-3" data-bs-toggle="modal"
+                        data-bs-target="#signupModal">
+                        Sign Up </button>
                 </form>
             </div>
         </nav>
@@ -72,6 +75,80 @@
     <div class="container-fluid footer pt-3 pb-3">
         <p class="pt-3">for more details,visit us at<a href="https://www.iplt20.com/" target="_blank"> iplt20.com</a>
         </p>
+    </div>
+    <div class="modal fade" id="loginModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">LOGIN</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group pb-2">
+                            <label for="email"><i class="fa-sharp fa-solid fa-envelope" style="color: #000000;"></i>
+                                Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter email">
+                        </div>
+                        <div class="form-group">
+                            <label for="password"><i class="fa-solid fa-lock" style="color: #000000;"></i>
+                                Password</label>
+                            <input type="password" class="form-control" id="password" placeholder="Enter password">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Login</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="signupModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">SIGN UP</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group pb-2">
+                            <label for="name"><i class="fa-sharp fa-solid fa-pen" style="color: #000000;"></i> Full
+                                Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Enter your full name">
+                        </div>
+                        <div class="form-group pb-2">
+                            <label for="email"><i class="fa-sharp fa-solid fa-envelope" style="color: #000000;"></i>
+                                Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                        </div>
+                        <div class="form-group pb-2">
+                            <label for="password"><i class="fa-solid fa-lock" style="color: #000000;"></i>
+                                Password</label>
+                            <input type="password" class="form-control" id="password" placeholder="Enter a password">
+                        </div>
+                        <div class="form-group pb-2">
+                            <label for="confirmPassword"><i class="fa-solid fa-lock" style="color: #000000;"></i>
+                                Confirm Password</label>
+                            <input type="password" class="form-control" id="confirmPassword"
+                                placeholder="Confirm your password">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone"><i class="fa-sharp fa-solid fa-phone" style="color: #000000;"></i> Phone
+                                Number</label>
+                            <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Sign Up</button>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 

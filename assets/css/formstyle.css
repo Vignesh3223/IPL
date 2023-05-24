@@ -97,3 +97,30 @@ h4 {
     color: red;
     letter-spacing: normal;
 }
+
+#loginModal,
+#signupModal {
+    background-image: url(/assets/images/back1.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.modal-title {
+    font-family: algerian;
+    color: darkblue;
+    font-weight: bold;
+    font-size: x-large;
+}
+
+form label {
+    font-family: times new roman;
+    color: #FFFFFF;
+    font-size: larger;
+    font-weight: bolder;
+}
+
+.modal-body,
+.modal-footer {
+    background-image: url(/assets/images/modalback.avif);
+    background-size: contain;
+}

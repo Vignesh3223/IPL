@@ -620,5 +620,12 @@
       "Matches": 17,
       "Wickets": 27
     }
+  ],
+  "Users":[
+    {
+      "id":1,
+      "username":"Admin",
+      "password":"Admin@123"
+    }
   ]
 }
