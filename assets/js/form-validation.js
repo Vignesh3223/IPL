@@ -41,6 +41,32 @@ $(document).ready(function () {
     });
 });
 
+function feedback() {
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+    const comments = document.getElementById("comments").value;
+    const xhttp = new XMLHttpRequest();
+    xhttp.open("POST", "  http://localhost:3000/Feedback");
+    xhttp.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+    xhttp.send(
+        JSON.stringify({
+            name: name,
+            email: email,
+            comments: comments
+        })
+    );
+    xhttp.onreadystatechange = function () {
+        if (this.readyState == 4 && this.status == 200) {
+            const objects = JSON.parse(this.responseText);
+            Swal.fire({
+                icon: 'success',
+                title: 'Feedback',
+                text: 'Thank you for your feedback'
+            });
+        }
+    };
+}
+
 /*winners and runners table display*/
 function loadTable() {
     const xhttp = new XMLHttpRequest
