@@ -34,11 +34,8 @@
                     <img id="logo" src="assets/images/ipl header.png" alt="header">
                 </a>
                 <form class="d-flex">
-                    <button type="button" class="btn btn-dark me-3" data-bs-toggle="modal" data-bs-target="#loginModal">
-                        Login </button>
-                    <button type="button" class="btn btn-dark me-3" data-bs-toggle="modal"
-                        data-bs-target="#signupModal">
-                        Sign Up </button>
+                    <button type="button" class="btn btn-dark me-3" onclick="validateLogin()">Login </button>
+                    <button type="button" class="btn btn-dark" onclick="validateSignUp()">Sign Up </button>
                 </form>
             </div>
         </nav>
@@ -129,82 +126,8 @@
         <p class="pt-3">for more details,visit us at<a href="https://www.iplt20.com/" target="_blank"> iplt20.com</a>
         </p>
     </div>
-    <div class="modal fade" id="loginModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-        aria-labelledby="staticBackdropLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="staticBackdropLabel">LOGIN</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <form id="login-form" onsubmit="validateLogin(); return false" method="get" action="">
-                        <div class="form-group pb-2">
-                            <label for="name"><i class="fa-sharp fa-solid fa-pen" style="color: #ffff;"></i>
-                                Username</label>
-                            <input type="name" class="form-control" id="name" name="name" placeholder="Enter Username" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="password"><i class="fa-solid fa-lock" style="color: #ffff;"></i>
-                                Password</label>
-                            <input type="password" class="form-control" id="password" name="password" placeholder="Enter password" required>
-                        </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="submit"  class="btn btn-primary">Login</button>
-                </div>
-            </form>
-            </div>
-        </div>
-    </div>
-    <div class="modal fade" id="signupModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-        aria-labelledby="staticBackdropLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="staticBackdropLabel">SIGN UP</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <form id="signup-form" onsubmit="validateSignUp(); return false" method="get" action="">
-                        <div class="form-group pb-2">
-                            <label for="name"><i class="fa-sharp fa-solid fa-pen" style="color: #ffff;"></i> Full
-                                Name</label>
-                            <input type="text" class="form-control" id="fname" name="fname" placeholder="Enter your full name">
-                        </div>
-                        <div class="form-group pb-2">
-                            <label for="email"><i class="fa-sharp fa-solid fa-envelope" style="color: #ffff;"></i>
-                                Email</label>
-                            <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email">
-                        </div>
-                        <div class="form-group pb-2">
-                            <label for="password"><i class="fa-solid fa-lock" style="color: #ffff;"></i>
-                                Password</label>
-                            <input type="password" class="form-control" id="passwd" name="passwd" placeholder="Enter a password">
-                        </div>
-                        <div class="form-group pb-2">
-                            <label for="confirmPassword"><i class="fa-solid fa-lock" style="color: #ffff;"></i>
-                                Confirm Password</label>
-                            <input type="password" class="form-control" id="confirmPassword" name="confirmPassword"
-                                placeholder="Confirm your password">
-                        </div>
-                        <div class="form-group">
-                            <label for="phone"><i class="fa-sharp fa-solid fa-phone" style="color: #ffff;"></i> Phone
-                                Number</label>
-                            <input type="tel" class="form-control" id="phone" name="phone" placeholder="Enter your phone number">
-                        </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="submit" class="btn btn-primary">Sign Up</button>
-                </div>
-            </form>
-            </div>
-        </div>
-    </div>
-     <!--external JS-->
-     <script src="assets/js/login-validation.js"></script>
+    <!--external JS-->
+    <script src="assets/js/login-validation.js"></script>
 </body>
 
 </html>

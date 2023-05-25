@@ -98,33 +98,31 @@ h4 {
     letter-spacing: normal;
 }
 
-#loginModal,
-#signupModal {
-    background-image: url(/assets/images/back1.webp);
-    background-repeat: no-repeat;
-    background-size: cover;
+.swal2-popup {
+    background-image: url(/assets/images/back1.webp) !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
 }
 
-.modal-title {
-    font-family: algerian;
-    color: darkblue;
-    font-weight: bold;
-    font-size: x-large;
+.swal2-title {
+    color: #000000 !important;
 }
 
-form label {
-    font-family: times new roman;
-    color: #FFFFFF;
-    font-size: larger;
-    font-weight: bolder;
+.swal2-input {
+    border: 3px solid #fff !important;
+    color: #000000 !important;
 }
 
-.modal-body,
-.modal-footer {
-    background-image: url(/assets/images/modalback.avif);
-    background-size: contain;
+.swal2-input::placeholder {
+    color: #000000 !important;
 }
 
-form .error{
-    color: red;
+.swal2-html-container {
+    color: #000000 !important;
+}
+
+.swal2-validation-message {
+    color: #ff0000 !important;
+    font-size: 14px !important;
+    font-weight: 500 !important;
 }
