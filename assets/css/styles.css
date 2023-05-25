@@ -110,9 +110,10 @@
     overflow: hidden;
     perspective: 1000px;
 }
-.card img{
-    width:100%;
-    height:auto;
+
+.card img {
+    width: 100%;
+    height: auto;
 }
 
 
@@ -375,6 +376,10 @@ form .error {
 }
 
 .swal2-input::placeholder {
+    color: #ffff !important;
+}
+
+.swal2-html-container {
     color: #ffff !important;
 }
 
