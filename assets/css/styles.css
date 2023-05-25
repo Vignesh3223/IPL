@@ -362,7 +362,7 @@ form .error {
 
 /*Sweetalert*/
 .swal2-popup {
-    background-image: url(/assets/images/swalback.png) !important;
+    background-image: url(../images/swalback.png) !important;
     background-size: contain !important;
 }
 
