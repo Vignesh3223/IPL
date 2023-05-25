@@ -32,8 +32,22 @@ function validateLogin() {
                     let validCredentials = false;
                     for (const validUser of users) {
                         if (validUser['username'] == uname && validUser['password'] == password) {
+                            const xhttp = new XMLHttpRequest();
+                            xhttp.open("PUT", `http://localhost:3000/Users/${validUser['id']}`);
+                            xhttp.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+                            xhttp.send(
+                                JSON.stringify({
+                                    username: validUser['username'],
+                                    email: validUser['email'],
+                                    password: validUser['password'],
+                                    confirmPassword: validUser['confirmPassword'],
+                                    phone: validUser['phone'],
+                                    logged: 1
+                                })
+                            );
                             validCredentials = true;
                             break;
+                           
                         }
                     }
                     if (validCredentials) {
@@ -45,6 +59,7 @@ function validateLogin() {
                             timer: 2000,
                             timerProgressBar: true
                         }).then(() => {
+
                             window.location.replace("index.html");
                         });
                     } else {
@@ -108,6 +123,7 @@ function validateSignUp() {
                     password: passwd,
                     confirmPassword: confirmPassword,
                     phone: phone,
+                    logged: 0
                 })
             );
             Swal.fire({

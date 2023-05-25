@@ -51,6 +51,45 @@ $(document).ready(function () {
     });
 });
 
+
+$(document).ready(function () {
+    const xhttp = new XMLHttpRequest();
+    xhttp.open("GET", "http://localhost:3000/Users");
+    xhttp.send();
+    xhttp.onreadystatechange = function () {
+        if (this.readyState == 4 && this.status == 200) {
+            const users = JSON.parse(this.responseText);
+            var htmlString = ""
+            for (const validUser of users) {
+                if (validUser['logged'] == 1 && validUser['username'] == 'Admin') {
+                    htmlString = `<li><i class="fa-solid fa-user"></i> ${validUser['username']}</li>
+                    <li><button type="button" class="btn btn-dark" onclick="logout()">Logout</button></li>`
+                    $('#create1').prop('hidden', false);
+                    $('#create2').prop('hidden', false)
+                    $('#create3').prop('hidden', false)
+                    $('#create4').prop('hidden', false)
+                    $('#create5').prop('hidden', false)
+                    break;
+                }
+                else if (validUser['logged'] == 1 && validUser['username'] != 'Admin') {
+                    htmlString = `<li><i class="fa-solid fa-user"></i> ${validUser['username']}</li>
+                    <li><button type="button" class="btn btn-dark" onclick="logout()">Logout</button></li>`
+                    $('#create1').prop('hidden', true);
+                    $('#create2').prop('hidden', true)
+                    $('#create3').prop('hidden', true)
+                    $('#create4').prop('hidden', true)
+                    $('#create5').prop('hidden', true)
+                    break;
+                }
+            }
+            $('#navigation').html(htmlString);
+        }
+    }
+})
+$(document).ready(function () {
+
+})
+
 /*winners and runners table display*/
 function loadTable() {
     const xhttp = new XMLHttpRequest
@@ -573,8 +612,34 @@ function logout() {
         cancelButtonText: 'Cancel'
     }).then((result) => {
         if (result.isConfirmed) {
-            window.location.replace("login.html");
+            const xhttp = new XMLHttpRequest();
+            xhttp.open("GET", "http://localhost:3000/Users");
+            xhttp.send();
+            xhttp.onreadystatechange = function () {
+                if (this.readyState == 4 && this.status == 200) {
+                    const users = JSON.parse(this.responseText);
+                    for (const validUser of users) {
+                        if (validUser['logged'] == 1 ) {
+                            const xhttp = new XMLHttpRequest();
+                            xhttp.open("PUT", `http://localhost:3000/Users/${validUser['id']}`);
+                            xhttp.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+                            xhttp.send(
+                                JSON.stringify({
+                                    username: validUser['username'],
+                                    email: validUser['email'],
+                                    password: validUser['password'],
+                                    confirmPassword: validUser['confirmPassword'],
+                                    phone: validUser['phone'],
+                                    logged: 0
+                                })
+                            );
+                        }
+                    }
+                }
+                window.location.replace("login.html");
+            }
         }
     });
-
 }
+
+

@@ -27,6 +27,13 @@
     width: 100px;
 }
 
+#navigation li:nth-child(1){
+    font-family: puvi;
+    font-size: larger;
+    font-weight: bolder;
+    padding-top: 5px;
+}
+
 /*layer 1*/
 #two {
     width: 100%;
@@ -359,7 +366,9 @@ form .error {
     color: red;
     letter-spacing: normal;
 }
-
+.hide{
+    display: none;
+}
 /*Sweetalert*/
 .swal2-popup {
     background-image: url(../images/swalback.png) !important;
