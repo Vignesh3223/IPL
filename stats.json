@@ -626,14 +626,6 @@
       "id": 1,
       "username": "Admin",
       "password": "Admin@123"
-    },
-    {
-      "username": "Vignesh",
-      "email": "vignesh@cgvak.com",
-      "password": "Vicky@123",
-      "confirmPassword": "Vicky@123",
-      "phone": "985402251",
-      "id": 2
     }
   ]
 }
