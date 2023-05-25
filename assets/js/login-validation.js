@@ -5,10 +5,11 @@ function validateLogin() {
         html:
             '<input id="id" type="hidden">' +
             '<input id="name" class="swal2-input" placeholder="Enter Username" required>' +
-            '<input id="password" class="swal2-input" type="password" placeholder="Enter Password" required>',
+            '<input id="password" class="swal2-input" type="password" placeholder="Enter Password" required>' +
+            '<label for="showPassword"><input id="showPassword" type="checkbox"> Show Password</label>',
         focusConfirm: false,
         showCancelButton: true,
-        cancelButtonColor: '#d33',
+        cancelButtonColor: "#d33",
         preConfirm: () => {
             const uname = document.getElementById("name").value;
             const password = document.getElementById("password").value;
@@ -16,11 +17,9 @@ function validateLogin() {
             const passwordPattern = /^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#@$%&*_]).{8,16}$/;
             if (!uname || !password) {
                 return Swal.showValidationMessage("Please fill in all the fields");
-            }
-            else if (!namePattern.test(uname)) {
+            } else if (!namePattern.test(uname)) {
                 return Swal.showValidationMessage("Name must exceed 2 characters and contain only alphabets");
-            }
-            else if (!passwordPattern.test(password)) {
+            } else if (!passwordPattern.test(password)) {
                 return Swal.showValidationMessage("Password must contain 8-16 characters with at least one uppercase letter, one lowercase letter, one digit, and one symbol");
             }
             const xhttp = new XMLHttpRequest();
@@ -47,7 +46,6 @@ function validateLogin() {
                             );
                             validCredentials = true;
                             break;
-
                         }
                     }
                     if (validCredentials) {
@@ -59,7 +57,6 @@ function validateLogin() {
                             timer: 2000,
                             timerProgressBar: true
                         }).then(() => {
-
                             window.location.replace("index.html");
                         });
                     } else {
@@ -72,9 +69,18 @@ function validateLogin() {
                     }
                 }
             };
+        },
+        didOpen: () => {
+            const showPasswordCheckbox = document.getElementById("showPassword");
+            const passwordField = document.getElementById("password");
+
+            showPasswordCheckbox.addEventListener("change", () => {
+                passwordField.type = showPasswordCheckbox.checked ? "text" : "password";
+            });
         }
     });
 }
+
 
 /*SignUp form Validation*/
 function validateSignUp() {
@@ -84,8 +90,14 @@ function validateSignUp() {
             '<input id="id" type="hidden">' +
             '<input id="fname" class="swal2-input" placeholder="Enter First Name" required>' +
             '<input id="email" class="swal2-input" placeholder="Enter Email" required>' +
+            '<div class="password-container">' +
             '<input id="passwd" class="swal2-input" type="password" placeholder="Enter Password" required>' +
+            '<i class="password-toggle fas fa-eye" id="toggler"></i>' +
+            '</div>' +
+            '<div class="password-container">' +
             '<input id="confirmPassword" class="swal2-input" type="password" placeholder="Re-enter Password" required>' +
+            '<i class="password-toggle fas fa-eye" id="toggler"></i>' +
+            '</div>' +
             '<input id="phone" class="swal2-input" placeholder="Enter Phone number" required>',
         focusConfirm: false,
         showCancelButton: true,
@@ -131,6 +143,23 @@ function validateSignUp() {
                 title: 'Sign Up Successful',
                 text: 'Account Created Successfully, You can Login Now!',
             });
+        },
+        didOpen: () => {
+            const passwordToggleIcons = document.querySelectorAll(".password-toggle");
+            const passwordFields = document.querySelectorAll('input[type="password"]');
+            passwordToggleIcons.forEach((icon, index) => {
+                icon.addEventListener("click", () => {
+                    if (passwordFields[index].type === "password") {
+                        passwordFields[index].type = "text";
+                        icon.classList.remove("fa-eye");
+                        icon.classList.add("fa-eye-slash");
+                    } else {
+                        passwordFields[index].type = "password";
+                        icon.classList.remove("fa-eye-slash");
+                        icon.classList.add("fa-eye");
+                    }
+                });
+            });
         }
-    })
+    });
 }

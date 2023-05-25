@@ -103,32 +103,37 @@ h4 {
 
 /*sweetalert*/
 .swal2-popup {
-    background-image: url(../images/back1.png) !important;
+    background-image: url(../images/formback.png) !important;
     background-repeat: no-repeat !important;
     background-size: cover !important;
 }
 
 .swal2-title {
-    color: #000000 !important;
+    color: #FFFFFF !important;
 }
 
 .swal2-input {
     border: 3px solid #fff !important;
-    color: #000000 !important;
+    color: #FFFFFF !important;
 }
 
 .swal2-input::placeholder {
-    color: #000000 !important;
+    color: #ffff !important;
 }
 
 .swal2-html-container {
-    color: #000000 !important;
+    color: #ffff !important;
 }
 
 .swal2-validation-message {
     color: #ff0000 !important;
     font-size: 14px !important;
     font-weight: 500 !important;
+}
+
+.fa-eye:before,
+.fa-eye-slash:before {
+    margin-left: -120px;
 }
 
 /*medaiquery*/
