@@ -51,7 +51,7 @@ function validateLogin() {
                         Swal.fire({
                             icon: 'error',
                             title: 'Login Failed',
-                            text: 'Invalid username or password, SignUp First',
+                            text: 'User not found, Create an Account',
                             confirmButtonText: 'OK'
                         });
                     }
@@ -110,11 +110,11 @@ function validateSignUp() {
                     phone: phone,
                 })
             );
-                    Swal.fire({
-                        icon: 'success',
-                        title: 'Sign Up Successful',
-                        text: 'Account Created Successfully, You can Login Now!',
-                    });
-                }
-            })
+            Swal.fire({
+                icon: 'success',
+                title: 'Sign Up Successful',
+                text: 'Account Created Successfully, You can Login Now!',
+            });
         }
+    })
+}
