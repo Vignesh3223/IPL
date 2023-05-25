@@ -34,7 +34,6 @@ $(document).ready(function () {
             }
         },
         submitHandler: function (form) {
-            // Form is valid, perform AJAX request and show success popup
             const name = $("#name").val();
             const email = $("#email").val();
             const comments = $("#comments").val();
@@ -51,7 +50,7 @@ $(document).ready(function () {
     });
 });
 
-
+/*Display Logged user*/
 $(document).ready(function () {
     const xhttp = new XMLHttpRequest();
     xhttp.open("GET", "http://localhost:3000/Users");
@@ -207,6 +206,7 @@ function loadTable2() {
 }
 loadTable2();
 
+/*new record creation in winners and captains table*/
 function CreatePlayersBox() {
     Swal.fire({
         title: "ADD CAPTAIN, MAN OF THE MATCH & PLAYER OF THE SERIES",
@@ -294,7 +294,7 @@ function loadTable3() {
 }
 loadTable3();
 
-
+/*new record creation in most wins table*/
 function CreateTeamBox() {
     Swal.fire({
         title: "ADD WINNING TEAM",
@@ -395,6 +395,7 @@ function loadTable4() {
 }
 loadTable4();
 
+/*new record creation in orange cap winners table*/
 function CreateBatsmanBox() {
     Swal.fire({
         title: "ADD ORANGE CAP WINNER",
@@ -505,7 +506,7 @@ function addBatsman() {
     };
 }
 
-/*orange cap winners display*/
+/*purple cap winners display*/
 function loadTable5() {
     const xhttp = new XMLHttpRequest
     xhttp.open("GET", "http://localhost:3000/Purple_Cap");
@@ -531,6 +532,7 @@ function loadTable5() {
 }
 loadTable5();
 
+/*new record creation in purple cap winners table*/
 function CreateBowlerBox() {
     Swal.fire({
         title: "ADD PURPLE CAP WINNER",
@@ -600,6 +602,7 @@ function addBowler() {
     };
 }
 
+/*logout function*/
 function logout() {
     Swal.fire({
         title: 'Logout Confirmation',
