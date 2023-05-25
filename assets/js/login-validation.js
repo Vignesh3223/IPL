@@ -1,3 +1,4 @@
+/*Login form Validation*/
 function validateLogin() {
     Swal.fire({
         title: "LOGIN",
@@ -60,7 +61,7 @@ function validateLogin() {
     });
 }
 
-
+/*SignUp form Validation*/
 function validateSignUp() {
     Swal.fire({
         title: "CREATE ACCOUNT",

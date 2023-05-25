@@ -1,3 +1,4 @@
+/*navbar*/
 nav {
     background: #355C7D;
     background: -webkit-linear-gradient(to right, #C06C84, #6C5B7B, #355C7D);
@@ -9,6 +10,7 @@ nav {
     width: 120px;
 }
 
+/*page1*/
 .page1 {
     background-image: url(/assets/images/back1.webp);
     background-size: cover;
@@ -26,10 +28,10 @@ h4 {
     color: rgb(237, 5, 206);
 }
 
+/*page1 cards*/
 .card-container {
     perspective: 1000px;
     width: 400px;
-    /* Adjust the width as needed */
     border-radius: 10px;
     margin: auto;
 }
@@ -80,6 +82,7 @@ h4 {
     object-fit: cover;
 }
 
+/*footer*/
 .footer {
     text-align: center;
     letter-spacing: 3px;
@@ -98,6 +101,7 @@ h4 {
     letter-spacing: normal;
 }
 
+/*sweetalert*/
 .swal2-popup {
     background-image: url(/assets/images/back1.webp) !important;
     background-repeat: no-repeat !important;
