@@ -12,7 +12,7 @@ nav {
 
 /*page1*/
 .page1 {
-    background-image: url(/assets/images/back1.webp);
+    background-image: url(/assets/images/back1.png);
     background-size: cover;
 }
 
@@ -103,7 +103,7 @@ h4 {
 
 /*sweetalert*/
 .swal2-popup {
-    background-image: url(/assets/images/back1.webp) !important;
+    background-image: url(/assets/images/back1.png) !important;
     background-repeat: no-repeat !important;
     background-size: cover !important;
 }
