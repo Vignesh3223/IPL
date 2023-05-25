@@ -110,17 +110,11 @@ function validateSignUp() {
                     phone: phone,
                 })
             );
-            xhttp.onreadystatechange = function () {
-                if (this.readyState == 4 && this.status == 200) {
-                    const users = JSON.parse(this.responseText);
-                    console.log(this.responseText);
                     Swal.fire({
                         icon: 'success',
                         title: 'Sign Up Successful',
                         text: 'Account Created Successfully, You can Login Now!',
                     });
                 }
-            };
-        },
-    });
-}
+            })
+        }
