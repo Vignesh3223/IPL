@@ -635,9 +635,9 @@
   "Users": [
     {
       "username": "Admin",
-      "email": "kedudud",
+      "email": "adminmanager@gmail.com",
       "password": "Admin@123",
-      "confirmPassword": "hugugeuwg",
+      "confirmPassword": "Admin@123",
       "phone": 6354763781,
       "logged": 0,
       "id": 1
@@ -650,6 +650,15 @@
       "phone": "9360565312",
       "logged": 0,
       "id": 2
+    },
+    {
+      "username": "Arun Joseph",
+      "email": "drre@gmail.com",
+      "password": "Arun@1234",
+      "confirmPassword": "Arun@1234",
+      "phone": "2635617712",
+      "logged": 0,
+      "id": 3
     }
   ]
 }

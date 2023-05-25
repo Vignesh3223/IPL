@@ -5,7 +5,7 @@ function validateLogin() {
         html:
             '<input id="id" type="hidden">' +
             '<input id="name" class="swal2-input" placeholder="Enter Username" required>' +
-            '<input id="password" class="swal2-input" placeholder="Enter Password" required>',
+            '<input id="password" class="swal2-input" type="password" placeholder="Enter Password" required>',
         focusConfirm: false,
         showCancelButton: true,
         cancelButtonColor: '#d33',
@@ -47,7 +47,7 @@ function validateLogin() {
                             );
                             validCredentials = true;
                             break;
-                           
+
                         }
                     }
                     if (validCredentials) {
@@ -84,8 +84,8 @@ function validateSignUp() {
             '<input id="id" type="hidden">' +
             '<input id="fname" class="swal2-input" placeholder="Enter First Name" required>' +
             '<input id="email" class="swal2-input" placeholder="Enter Email" required>' +
-            '<input id="passwd" class="swal2-input" placeholder="Enter Password" required>' +
-            '<input id="confirmPassword" class="swal2-input" placeholder="Re-enter Password" required>' +
+            '<input id="passwd" class="swal2-input" type="password" placeholder="Enter Password" required>' +
+            '<input id="confirmPassword" class="swal2-input" type="password" placeholder="Re-enter Password" required>' +
             '<input id="phone" class="swal2-input" placeholder="Enter Phone number" required>',
         focusConfirm: false,
         showCancelButton: true,
