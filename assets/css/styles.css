@@ -1,7 +1,7 @@
 /*new font*/
 @font-face {
     font-family: puvi;
-    src: url(/assets/fonts/OpenType-TT/Zoho\ Puvi\ Regular.ttf);
+    src: url(../fonts/OpenType-PS/Zoho\ Puvi\ Regular.otf);
 }
 
 /*navigation bar*/
