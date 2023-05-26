@@ -27,7 +27,7 @@
     width: 100px;
 }
 
-#navigation li:nth-child(1){
+#navigation li:nth-child(1) {
     font-family: puvi;
     font-size: larger;
     font-weight: bolder;
@@ -367,9 +367,11 @@ form .error {
     color: red;
     letter-spacing: normal;
 }
-.hide{
+
+.hide {
     display: none;
 }
+
 /*Sweetalert*/
 .swal2-popup {
     background-image: url(../images/swalback.png) !important;
@@ -397,6 +399,12 @@ form .error {
     color: #ff0000 !important;
     font-size: 14px !important;
     font-weight: 500 !important;
+}
+
+.swal2-icon.swal2-success.swal2-icon-show .swal2-success-circular-line-left,
+.swal2-icon.swal2-success.swal2-icon-show .swal2-success-circular-line-right,
+.swal2-icon.swal2-success.swal2-icon-show .swal2-success-fix {
+    background: none !important;
 }
 
 /*media query*/
