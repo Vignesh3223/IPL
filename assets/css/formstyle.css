@@ -136,9 +136,27 @@ h4 {
     margin-left: -120px;
 }
 
+.swal2-icon.swal2-success.swal2-icon-show .swal2-success-circular-line-left,
+.swal2-icon.swal2-success.swal2-icon-show .swal2-success-circular-line-right,
+.swal2-icon.swal2-success.swal2-icon-show .swal2-success-fix {
+    background: none !important;
+}
+
 /*medaiquery*/
 @media (max-width:769px) {
     .card-container {
         display: none;
+    }
+}
+
+@media (max-width:321px) {
+    .swal2-html-container .swal2-input {
+        margin-left: -14px;
+    }
+    #swal2-title {
+        margin-left: -20px;;
+    }
+    .swal2-confirm,.swal2-cancel{
+        margin-left: -25px;
     }
 }

@@ -648,7 +648,7 @@
       "password": "Hello#123",
       "confirmPassword": "Hello#123",
       "phone": "9360565312",
-      "logged": 1,
+      "logged": 0,
       "id": 2
     }
   ]
