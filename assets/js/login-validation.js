@@ -52,7 +52,7 @@ function validateLogin() {
                         Swal.fire({
                             icon: 'success',
                             title: 'Login Successful',
-                            text: 'Redirecting to index.html...',
+                            text: 'Redirecting to the Main Page...',
                             showConfirmButton: false,
                             timer: 2000,
                             timerProgressBar: true
