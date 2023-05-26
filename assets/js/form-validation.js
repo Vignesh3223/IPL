@@ -325,12 +325,11 @@ function CreateTeamBox() {
 }
 
 function addTeamstats(team, year) {
-    const xhttp = new XMLHttpRequest
+    const xhttp = new XMLHttpRequest();
     xhttp.open("GET", "http://localhost:3000/Most_Wins");
     xhttp.send();
     xhttp.onreadystatechange = function () {
         if (this.readyState == 4 && this.status == 200) {
-            console.log(this.responseText);
             const objects = JSON.parse(this.responseText);
             var present = false;
             for (let object of objects) {
@@ -345,7 +344,7 @@ function addTeamstats(team, year) {
                             Year: object['Year'] + `,${year}`
                         })
                     );
-                    present = true
+                    present = true;
                     break;
                 }
             }
@@ -361,9 +360,15 @@ function addTeamstats(team, year) {
                     })
                 );
             }
-
+            Swal.fire({
+                icon: 'success',
+                title: 'Team Stats Updated',
+                text: 'Team stats have been updated successfully.'
+            }).then(function () {
+                loadTable3();
+            });
         }
-    }
+    };
 }
 
 /*orange cap winners display*/
@@ -625,7 +630,7 @@ function logout() {
                 if (this.readyState == 4 && this.status == 200) {
                     const users = JSON.parse(this.responseText);
                     for (const validUser of users) {
-                        if (validUser['logged'] == 1 ) {
+                        if (validUser['logged'] == 1) {
                             const xhttp = new XMLHttpRequest();
                             xhttp.open("PUT", `http://localhost:3000/Users/${validUser['id']}`);
                             xhttp.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
