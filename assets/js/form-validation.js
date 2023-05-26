@@ -41,6 +41,9 @@ $(document).ready(function () {
             xhttp.open("POST", "http://localhost:3000/Feedback");
             xhttp.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
             xhttp.send(JSON.stringify({ name: name, email: email, comments: comments }));
+            $("#name").val('');
+            $("#email").val('');
+            $("#comments").val('');
             Swal.fire({
                 icon: 'success',
                 title: 'Feedback',
