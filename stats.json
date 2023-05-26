@@ -497,20 +497,6 @@
       "hundreds": 4,
       "fours": 83,
       "sixes": 45
-    },
-    {
-      "Year": "2023",
-      "Winner": "rutu",
-      "Innings": "16",
-      "Runs": "736",
-      "Highest_Score": "102",
-      "Average": "55",
-      "Strike_Rate": "200",
-      "fifties": "5",
-      "hundreds": "1",
-      "fours": "52",
-      "sixes": "36",
-      "id": 16
     }
   ],
   "Purple_Cap": [
@@ -653,7 +639,7 @@
       "password": "Admin@123",
       "confirmPassword": "Admin@123",
       "phone": 6354763781,
-      "logged": 0,
+      "logged": 1,
       "id": 1
     },
     {

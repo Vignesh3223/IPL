@@ -169,15 +169,16 @@ function addWinner() {
             Venue: Venue,
         })
     );
+    Swal.fire({
+        icon: 'success',
+        title: 'Record added',
+        text: 'Record added Successfully'
+    }).then(function () {
+        loadTable();
+    });
     xhttp.onreadystatechange = function () {
         if (this.readyState == 4 && this.status == 200) {
             const objects = JSON.parse(this.responseText);
-            Swal.fire({
-                icon: 'success',
-                title: 'Record added',
-                text: objects["message"]
-            });
-            loadTable();
         }
     };
 }
@@ -260,15 +261,16 @@ function addPlayers() {
             Player_of_the_Series: Player_of_the_Series,
         })
     );
+    Swal.fire({
+        icon: 'success',
+        title: 'Record added',
+        text: 'Record added Succesfully'
+    }).then(function(){
+        loadTable2();
+    });
     xhttp.onreadystatechange = function () {
         if (this.readyState == 4 && this.status == 200) {
-            const objects = JSON.parse(this.responseText);
-            Swal.fire({
-                icon: 'success',
-                title: 'Record added',
-                text: objects["message"]
-            });
-            loadTable2();
+            const objects = JSON.parse(this.responseText);    
         }
     };
 }
@@ -501,15 +503,16 @@ function addBatsman() {
             sixes: sixes,
         })
     );
+    Swal.fire({
+        icon: 'success',
+        title: 'Record added',
+        text: 'Record added successfully'
+    }).then(function(){
+        loadTable4();
+    });
     xhttp.onreadystatechange = function () {
         if (this.readyState == 4 && this.status == 200) {
-            const objects = JSON.parse(this.responseText);
-            Swal.fire({
-                icon: 'success',
-                title: 'Record added',
-                text: objects["message"]
-            });
-            loadTable4();
+            const objects = JSON.parse(this.responseText); 
         }
     };
 }
@@ -597,15 +600,16 @@ function addBowler() {
             Wickets: Wickets,
         })
     );
+    Swal.fire({
+        icon: 'success',
+        title: 'Record added',
+        text: 'Record added successfully'
+    }).then(function(){
+        loadTable5();
+    });
     xhttp.onreadystatechange = function () {
         if (this.readyState == 4 && this.status == 200) {
             const objects = JSON.parse(this.responseText);
-            Swal.fire({
-                icon: 'success',
-                title: 'Record added',
-                text: objects["message"]
-            });
-            loadTable5();
         }
     };
 }
