@@ -245,10 +245,10 @@
   ],
   "Most_Wins": [
     {
-      "id": 1,
       "Team": "Mumbai Indians",
-      "Trophy": 5,
-      "Year": "2013, 2015, 2017, 2019, 2020"
+      "Trophy": 6,
+      "Year": "2013, 2015, 2017, 2019, 2020,2023",
+      "id": 1
     },
     {
       "id": 2,
@@ -497,6 +497,20 @@
       "hundreds": 4,
       "fours": 83,
       "sixes": 45
+    },
+    {
+      "Year": "2023",
+      "Winner": "rutu",
+      "Innings": "16",
+      "Runs": "736",
+      "Highest_Score": "102",
+      "Average": "55",
+      "Strike_Rate": "200",
+      "fifties": "5",
+      "hundreds": "1",
+      "fours": "52",
+      "sixes": "36",
+      "id": 16
     }
   ],
   "Purple_Cap": [
@@ -630,6 +644,12 @@
       "email": "ram@gmail.com",
       "comments": "Nice Website ! Good",
       "id": 2
+    },
+    {
+      "name": "ranita",
+      "email": "vignesh@cgvak.com",
+      "comments": "fabulous",
+      "id": 3
     }
   ],
   "Users": [
@@ -659,6 +679,24 @@
       "phone": "9360565312",
       "logged": 0,
       "id": 3
+    },
+    {
+      "username": "yamini",
+      "email": "viketvicky@gmail.com",
+      "password": "Yamini@1611",
+      "confirmPassword": "Yamini@1611",
+      "phone": "9360565312",
+      "logged": 0,
+      "id": 4
+    },
+    {
+      "username": "Ranita",
+      "email": "vignesh@cgvak.com",
+      "password": "RRRrrr111@",
+      "confirmPassword": "RRRrrr111@",
+      "phone": "2635617712",
+      "logged": 0,
+      "id": 5
     }
   ]
 }
