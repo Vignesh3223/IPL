@@ -142,6 +142,11 @@ h4 {
     background: none !important;
 }
 
+label {
+    margin-right: 125px;
+    margin-top: 5px;
+}
+
 /*medaiquery*/
 @media (max-width:769px) {
     .card-container {
@@ -149,14 +154,30 @@ h4 {
     }
 }
 
-@media (max-width:321px) {
+@media(max-width:376px) {
     .swal2-html-container .swal2-input {
-        margin-left: -14px;
+        margin-left: 10px;
     }
+
     #swal2-title {
-        margin-left: -20px;;
+        margin-left: -10px;
     }
-    .swal2-confirm,.swal2-cancel{
+
+    .swal2-styled.swal2-confirm {
+        margin-left: -15px;
+    }
+}
+
+@media(max-width: 321px) {
+    .swal2-html-container .swal2-input {
+        margin-left: -20px;
+    }
+
+    #swal2-title {
         margin-left: -25px;
+    }
+
+    .swal2-styled.swal2-confirm {
+        margin-left: -45px;
     }
 }
