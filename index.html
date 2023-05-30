@@ -88,34 +88,36 @@
         </div>
     </div>
     <!--layer 2 carousel-->
-    <div class="container-fluid page3 pt-4 pb-5">
+    <div class="container-breakpoint page3 pt-4 pb-5">
         <h1>TITLE SPONSORS AND FEES FROM 2008 - 2023</h1>
-        <div id="carouselExampleInterval" class="carousel slide pt-4" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active" data-bs-interval="2000">
-                    <img src="assets/images/IPL-title-sponsors.jpg" class="d-block w-100" alt="sponsors">
+        <div class="container">
+            <div id="carouselExampleInterval" class="carousel slide pt-4" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="2000">
+                        <img src="assets/images/IPL-title-sponsors.jpg" class="d-block w-100" alt="sponsors">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="assets/images/sponsors-chart.webp" class="d-block w-100" alt="chart">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="assets/images/IPL-title-sponsors-_Startuptalky.png" class="d-block w-100" alt="fees">
+                    </div>
                 </div>
-                <div class="carousel-item" data-bs-interval="2000">
-                    <img src="assets/images/sponsors-chart.webp" class="d-block w-100" alt="chart">
-                </div>
-                <div class="carousel-item" data-bs-interval="2000">
-                    <img src="assets/images/IPL-title-sponsors-_Startuptalky.png" class="d-block w-100" alt="fees">
-                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
         </div>
     </div>
     <!--layer 3 cards-->
-    <div class="container-fluid page4 pt-3 mb-5 pb-5" id="teams">
+    <div class="container-breakpoint page4 pt-3 mb-5 pb-5" id="teams">
         <h1>IPL TEAMS</h1>
         <div class="container part3 pt-3">
             <div class="card-container">
@@ -406,7 +408,7 @@
         </div>
     </div>
     <!--layer 5-->
-    <div class="container-fluid page6 mt-1" id="winners">
+    <div class="container-breakpoint page6 mt-1" id="winners">
         <h1>CHAMPIONS RECORDS</h1>
         <div class="container mt-4 pb-3">
             <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
@@ -627,43 +629,45 @@
         </div>
     </div>
     <!--layer 6-->
-    <div class="container-fluid page7" id="cmt">
+    <div class="container-breakpoint page7" id="cmt">
         <h1>FEEDBACK</h1>
-        <div class="p1">
-            <img class="pt-2 pb-2 ms-5" src="assets/images/comments.jpg" alt="comment">
-            <form class="pe-3 validate" id="comment">
-                <div class="form-group mb-2">
-                    <label for="name">
-                        <span class="badge bg-info">
-                            <i class="fas fa-user"></i>
-                            Name
-                        </span>
-                    </label>
-                    <input type="text" id="name" name="name" class="form-control" placeholder="Enter your name"
-                        required>
-                </div>
-                <div class="form-group mb-2">
-                    <label for="email">
-                        <span class="badge bg-warning">
-                            <i class="fas fa-envelope"></i>
-                            Email
-                        </span>
-                    </label>
-                    <input type="email" id="email" name="email" class="form-control" placeholder="Enter your email"
-                        required>
-                </div>
-                <div class="form-group">
-                    <label for="comments">
-                        <span class="badge bg-dark">
-                            <i class="fas fa-comments"></i>
-                            Comments
-                        </span>
-                    </label>
-                    <textarea rows="5" id="comments" name="comments" class="form-control"
-                        placeholder="Enter your comments"></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary mt-3">Submit</button>
-            </form>
+        <div class="container-fluid">
+            <div class="p1">
+                <img class="pt-2 pb-2 ms-5" src="assets/images/feedback.png" alt="comment">
+                <form class="pe-3 validate" id="comment">
+                    <div class="form-group mb-2">
+                        <label for="name">
+                            <span class="badge bg-info">
+                                <i class="fas fa-user"></i>
+                                Name
+                            </span>
+                        </label>
+                        <input type="text" id="name" name="name" class="form-control" placeholder="Enter your name"
+                            required>
+                    </div>
+                    <div class="form-group mb-2">
+                        <label for="email">
+                            <span class="badge bg-warning">
+                                <i class="fas fa-envelope"></i>
+                                Email
+                            </span>
+                        </label>
+                        <input type="email" id="email" name="email" class="form-control" placeholder="Enter your email"
+                            required>
+                    </div>
+                    <div class="form-group">
+                        <label for="comments">
+                            <span class="badge bg-dark">
+                                <i class="fas fa-comments"></i>
+                                Comments
+                            </span>
+                        </label>
+                        <textarea rows="5" id="comments" name="comments" class="form-control"
+                            placeholder="Enter your comments"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary mt-3">Submit</button>
+                </form>
+            </div>
         </div>
     </div>
     <!--layer 7-->
