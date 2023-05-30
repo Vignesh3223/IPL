@@ -4,7 +4,7 @@
       "id": 1,
       "Year": 2008,
       "Winner": "Rajasthan Royals",
-      "Won_by": "3 Wickets",
+      "Won_by": "3 wickets",
       "Runner_Up": "Chennai Super Kings",
       "Venue": "Mumbai"
     },
@@ -36,7 +36,7 @@
       "id": 5,
       "Year": 2012,
       "Winner": "Kolkata Knight Riders",
-      "Won_by": "5 Wickets",
+      "Won_by": "5 wickets",
       "Runner_Up": "Chennai Super Kings",
       "Venue": "Chennai"
     },
@@ -52,7 +52,7 @@
       "id": 7,
       "Year": 2014,
       "Winner": "Kolkata Knight Riders",
-      "Won_by": "3 Wickets",
+      "Won_by": "3 wickets",
       "Runner_Up": "Kings XI Punjab",
       "Venue": "Bangalore"
     },
@@ -84,7 +84,7 @@
       "id": 11,
       "Year": 2018,
       "Winner": "Chennai Super Kings",
-      "Won_by": "8 Wickets",
+      "Won_by": "8 wickets",
       "Runner_Up": "Sunrisers Hyderabad",
       "Venue": "Mumbai"
     },
@@ -100,7 +100,7 @@
       "id": 13,
       "Year": 2020,
       "Winner": "Mumbai Indians",
-      "Won_by": "5 Wickets",
+      "Won_by": "5 wickets",
       "Runner_Up": "Delhi Capitals",
       "Venue": "Dubai"
     },
@@ -119,6 +119,14 @@
       "Won_by": "7 wickets",
       "Runner_Up": "Rajasthan Royals",
       "Venue": "Ahmedabad"
+    },
+    {
+      "Year": "2023",
+      "Winner": "Chennai Super Kings",
+      "Won_by": "5 wickets",
+      "Runner_Up": "Gujarat Titans",
+      "Venue": "Ahmedabad",
+      "id": 16
     }
   ],
   "Captains": [
@@ -241,6 +249,14 @@
       "Captain": "Hardik Pandya",
       "Man_of_the_Match": "Hardik Pandya",
       "Player_of_the_Series": "Jos Buttler"
+    },
+    {
+      "Year": "2023",
+      "Winner": "Chennai Super Kings",
+      "Captain": "MS Dhoni",
+      "Man_of_the_Match": "Devon Conway",
+      "Player_of_the_Series": "Shubman Gill",
+      "id": 16
     }
   ],
   "Most_Wins": [
@@ -252,8 +268,8 @@
     },
     {
       "Team": "Chennai Super Kings",
-      "Trophy": 4,
-      "Year": "2010, 2011, 2018, 2021",
+      "Trophy": 5,
+      "Year": "2010, 2011, 2018, 2021, 2023",
       "id": 2
     },
     {
@@ -497,6 +513,20 @@
       "hundreds": 4,
       "fours": 83,
       "sixes": 45
+    },
+    {
+      "Year": "2023",
+      "Winner": "Shubman Gill",
+      "Innings": "17",
+      "Runs": "890",
+      "Highest_Score": "129",
+      "Average": "59.33",
+      "Strike_Rate": "157.80",
+      "fifties": "4",
+      "hundreds": "3",
+      "fours": "85",
+      "sixes": "33",
+      "id": 16
     }
   ],
   "Purple_Cap": [
@@ -619,6 +649,14 @@
       "Team": "Rajasthan Royals",
       "Matches": 17,
       "Wickets": 27
+    },
+    {
+      "Year": "2023",
+      "Winner": "Mohammad Shami",
+      "Team": "Gujarat Titans",
+      "Matches": "17",
+      "Wickets": "28",
+      "id": 16
     }
   ],
   "Feedback": [
@@ -648,7 +686,7 @@
       "password": "Hello#123",
       "confirmPassword": "Hello#123",
       "phone": "9360565312",
-      "logged": 0,
+      "logged": 1,
       "id": 2
     },
     {

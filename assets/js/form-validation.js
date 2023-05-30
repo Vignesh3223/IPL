@@ -343,7 +343,7 @@ function addTeamstats(team, year) {
                         JSON.stringify({
                             Team: object['Team'],
                             Trophy: 1 + object['Trophy'],
-                            Year: object['Year'] + `,${year}`
+                            Year: object['Year'] + `, ${year}`
                         })
                     );
                     present = true;
