@@ -516,7 +516,7 @@
     },
     {
       "Year": "2023",
-      "Winner": "Shubman Gill",
+      "Winner": "Shubman Gill (GT)",
       "Innings": "17",
       "Runs": "890",
       "Highest_Score": "129",
@@ -695,7 +695,7 @@
       "password": "Prakash@24",
       "confirmPassword": "Prakash@24",
       "phone": "9360565312",
-      "logged": 0,
+      "logged": 1,
       "id": 3
     }
   ]
